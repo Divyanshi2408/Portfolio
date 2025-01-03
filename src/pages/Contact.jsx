@@ -17,11 +17,13 @@ const Contact = () => {
 
     emailjs
       .send(
-        'service_6jp3yrc', // Replace with your EmailJS Service ID
-        'template_vejjnl8', // Replace with your EmailJS Template ID
+        process.env.REACT_APP_SERVICE_ID, // Use environment variable
+        process.env.REACT_APP_TEMPLATE_ID, // Use environment variable
         formData,
-        '5qpelEX7rkbHRZxf5' // Replace with your EmailJS Public Key
+        process.env.REACT_APP_USER_ID // Use environment variable
+        
       )
+      
       .then(
         () => {
           setSuccess(true);
@@ -34,17 +36,19 @@ const Contact = () => {
         }
       );
   };
+  console.log('Service ID:', process.env.REACT_APP_SERVICE_ID);
+  console.log('Template ID:', process.env.REACT_APP_TEMPLATE_ID);
+  console.log('User ID:', process.env.REACT_APP_USER_ID);
+  
 
   return (
     <div className="contact-page">
       <div className="sidebar">
         <h3>contacts</h3>
-       
-         <span> Divyanshipal2808@gmail.com</span>
-       
+        <span> Divyanshipal2808@gmail.com</span>
         <h3>find-me-also-in</h3>
         <ul className="social-links">
-        <li><a href="#">Linkedin account</a></li>
+          <li><a href="#">Linkedin account</a></li>
           <li><a href="#">Github account</a></li>
           <li><a href="#">Instagram account</a></li>
         </ul>
@@ -84,9 +88,15 @@ const Contact = () => {
             required
           ></textarea>
           <button type="submit">submit-message</button>
+          
         </form>
 
-        {success && <p className="success"><span>Thank you! 🤘</span> <br/>Your message has been accepted. You will recieve answer really soon!</p>}
+        {success && (
+          <p className="success">
+            <span>Thank you! 🤘</span> <br />
+            Your message has been accepted. You will receive an answer really soon!
+          </p>
+        )}
         {error && <p className="error">Failed to send message. Please try again.</p>}
       </div>
     </div>
