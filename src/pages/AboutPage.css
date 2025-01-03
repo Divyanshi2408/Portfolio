@@ -183,9 +183,10 @@
 .profile-image img {
   border: 3px solid #ff5555;
   border-radius: 50%;
-  width: 120px;
-  height: 120px;
+  width: 180px;
+  height: 180px;
   margin-bottom: 20px;
+  object-fit: cover;
 }
 
 /* Introduction Text */
@@ -496,7 +497,87 @@
   .common-grid, .common-grids {
     grid-template-columns: repeat(2, 1fr); 
   }
+ 
+  .timeline {
+    position: relative;
+  }
+  
+  .timeline::after {
+    content: '';
+    position: absolute;
+    width: 4px;
+    background-color: #fff;
+    top: -40px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  /* Timeline Item */
 
+ 
+  .timeline-icon {
+    background-color: #fff;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: 1;
+  }
+  
+  .timeline-icon img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  
+  }
+  
+  .timeline-content {
+    background: linear-gradient(to right, #250f4e, #1d4488);
+    color: #fff;
+    padding: 15px 50px;
+    position: relative;
+    border-radius: 8px;
+    max-width: 300px; 
+    margin: 0 70px; 
+  }
+  .timeline-content::before {
+    content: "";
+    position: absolute;
+    top: 20px; 
+    left: -15px; 
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-right: 15px solid #16356b;
+    
+  }
+  .timeline-item.left .timeline-content::before {
+    left: auto;
+    right: -15px; 
+    border-right: none; 
+    border-left: 15px solid #1d4488; 
+  }
+  
+  
+  
+  .timeline-item.left .timeline-content {
+    text-align: right;
+    margin-right: 40px;
+    
+  }
+  
+  .timeline-item.right .timeline-content {
+    margin-left: 50px; 
+  }
+  
   .timeline-content {
     padding: 5px 5px; /* Reduce padding for smaller screens */
   }
@@ -553,8 +634,8 @@
   }
 
   .profile-image img {
-    width: 80px; /* Reduce profile image size */
-    height: 80px;
+    width: 140px; /* Reduce profile image size */
+    height: 140px;
   }
 
   .role-title {

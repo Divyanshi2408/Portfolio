@@ -10,6 +10,7 @@ import im5 from "../Assets/images/mazure.jpg"
 import im6 from "../Assets/images/Oracle.jpg"
 import im7 from "../Assets/images/Cognizant.jpg"
 import im8 from "../Assets/images/co.jpeg"
+import im9 from "../Assets/images/my.png"
 
 const sidebarData = [
   {
@@ -437,7 +438,7 @@ const AboutPage = () => {
           ) : (
             <div className="hero-section">
   <div className="profile-image">
-    <img src="https://via.placeholder.com/120" alt="Your Name" />
+    <img src={im9} alt="Your Name" />
   </div>
   <div className="intro-text">
     <p>Hello World! My name is <span className="highlight">Divyanshi pal</span></p>
