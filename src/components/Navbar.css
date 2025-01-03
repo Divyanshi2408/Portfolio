@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&display=swap');
+
+.navbar {
+    display: flex;
+    position: absolute; 
+    width: 100%; 
+    justify-content: space-between; 
+    align-items: center;
+    background-color: #011627; 
+    color: #c9d1d9;
+    border-bottom: 1px solid rgb(94, 89, 112);
+    font-family: 'Fira Code', monospace;
+    z-index: 1000;
+  }
+  
+  .navbar-brand {
+    font-size: 1rem;
+    padding: 12px 80px;
+    font-weight: bold;
+    color: #607B96;
+    border-right:  1px solid rgb(94, 89, 112);
+  }
+  
+  .navbar-links {
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    flex: 1; /* Allows spacing between left and right */
+  }
+  .navbar-left {
+    display: flex;
+    align-items: center;
+  }
+  .navbar-right {
+    margin-left: auto; 
+    border-left:  1px solid rgb(94, 89, 112);
+  }
+  .navbar-item {
+    border-right:  1px solid rgb(94, 89, 112);
+    padding: 12px 20px;
+  }
+  .navbar-link {
+    text-decoration: none;
+    color: #607B96;
+    font-weight: 500;
+    font-size: 1rem;
+  }
+  
+  .navbar-link.active {
+    color: #58a6ff;
+    border-bottom: 2px solid #58a6ff;
+  }
+  
+  /* Hamburger Menu - Default Hidden */
+  .hamburger {
+    display: none; /* Hide by default */
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    color: #c9d1d9;
+    cursor: pointer;
+  }
+  
+  /* Show Hamburger Menu on Smaller Screens */
+  @media (max-width: 806px) {
+    .hamburger {
+      display: block; /* Show hamburger */
+    }
+    .navbar-links {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 46px;
+      left: 0;
+      width: 100%;
+      background-color: #011627;
+      padding: 10px 0;
+      height: 90vh;
+  }
+  .navbar-brand{
+    border: none; 
+  }
+  .navbar-links.mobile-menu-open {
+      display: flex;  
+  }
+    .navbar-item {
+      border: none;
+    }
+    .navbar-left{
+      flex-direction: column;
+    }
+    .navbar-right{
+      margin: 0;
+      border: none;
+    }
+  }
+  
+  
