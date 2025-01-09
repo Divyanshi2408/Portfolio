@@ -4,13 +4,17 @@ import { FaReact, FaHtml5, FaCss3, FaNodeJs } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io";
 import { MdOutlineWebhook } from "react-icons/md";
 import './Projects.css';
-
+import{
+  im10,im11,im12,im13,im14,im15,im16,im17,im18,im19,im20,im21,im22,im23,im24,im25,im26,im27,im28,im29,im30,im31,im32,im33,im34,im35
+} from "../Assets/images";
 const projects = [
-  { id: 1, title: "UI Animations", category: "React", image: "https://www.creative-tim.com/blog/content/images/size/w960/wordpress/2021/01/blog-4-1.jpg", description: "React UI Animations" },
-  { id: 2, title: "Tetris Game", category: "Vue", image: "https://www.creative-tim.com/blog/content/images/size/w960/wordpress/2021/01/blog-4-1.jpg", description: "Vue Tetris Game" },
-  { id: 3, title: "Ethereum Project", category: "Vue", image: "https://www.creative-tim.com/blog/content/images/size/w960/wordpress/2021/01/blog-4-1.jpg", description: "Vue Ethereum" },
-  { id: 4, title: "HTML Form Builder", category: "HTML", image: "https://www.creative-tim.com/blog/content/images/size/w960/wordpress/2021/01/blog-4-1.jpg", description: "HTML Form" },
-  { id: 5, title: "CSS Animations", category: "CSS", image: "https://www.creative-tim.com/blog/content/images/size/w960/wordpress/2021/01/blog-4-1.jpg", description: "CSS Animations" },
+  { id: 1, title: "UI Animations", category: "React", image:<img src={im12} alt="NPTEL" />, description: "React UI Animations" },
+  { id: 2, title: "Tetris Game", category: "Vue", image: <img src={im16} alt="NPTEL" />, description: "Vue Tetris Game" },
+  { id: 3, title: "Ethereum Project", category: "Vue", image: <img src={im26} alt="NPTEL" />, description: "Vue Ethereum" },
+  { id: 4, title: "HTML Form Builder", category: "HTML", image: <img src={im22} alt="NPTEL" />, description: "HTML Form" },
+  { id: 5, title: "CSS Animations", category: "CSS", image:<img src={im31} alt="NPTEL" />, description: "CSS Animations" },
+  { id: 6, title: "CSS Animations", category: "CSS", image:<img src={im20} alt="NPTEL" />, description: "CSS Animations" },
+  { id: 7, title: "CSS Animations", category: "CSS", image:<img src={im11} alt="NPTEL" />, description: "CSS Animations" },
 ];
 
 const categories = [
@@ -70,11 +74,12 @@ const Projects = () => {
         {filteredProjects.length > 0 ? (
           filteredProjects.map((project) => (
             <div className="project-card" key={project.id}>
-              <img src={project.image} alt={project.title} />
+            {project.image}
               <div className="project-details">
                 <h4>{project.title}</h4>
                 <p>{project.description}</p>
-                <button onClick={() => navigate(`/project/${project.id}`)}>View Project</button>
+                
+                <button className='btn' onClick={() => navigate(`/project/${project.id}`)}>View Project</button>
               </div>
             </div>
           ))

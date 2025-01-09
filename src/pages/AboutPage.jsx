@@ -1,16 +1,19 @@
 import React, { useState } from "react";
 import {FaUser,FaStar,FaSchool,FaEnvelope,FaPhone,FaChevronDown,FaChevronRight,FaTimes,} from "react-icons/fa";
 import "./AboutPage.css";
-import im from "../Assets/images/pr.png"
-import im1 from "../Assets/images/pe.png"
-import im2 from "../Assets/images/ho.png"
-import im3 from "../Assets/images/sub.png"
-import im4 from "../Assets/images/NPTEL.jpg"
-import im5 from "../Assets/images/mazure.jpg"
-import im6 from "../Assets/images/Oracle.jpg"
-import im7 from "../Assets/images/Cognizant.jpg"
-import im8 from "../Assets/images/co.jpeg"
-import im9 from "../Assets/images/my.png"
+// import im from "../Assets/images/pr.png"
+// import im1 from "../Assets/images/pe.png"
+// import im2 from "../Assets/images/ho.png"
+// import im3 from "../Assets/images/sub.png"
+// import im4 from "../Assets/images/NPTEL.jpg"
+// import im5 from "../Assets/images/mazure.jpg"
+// import im6 from "../Assets/images/Oracle.jpg"
+// import im7 from "../Assets/images/Cognizant.jpg"
+// import im8 from "../Assets/images/co.jpeg"
+// import im9 from "../Assets/images/my.png"
+import{
+  im,im1,im2,im3,im4,im5,im6,im7,im8,im9
+} from "../Assets/images";
 
 const sidebarData = [
   {

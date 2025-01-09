@@ -1,6 +1,9 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
 import './ProjectDetails.css';
+import{
+  im10,im11,im12,im13,im14,im15,im16,im17,im18,im19,im20,im21,im22,im23,im24,im25,im26,im27,im28,im29,im30,im31,im32,im33,im34,im35
+} from "../Assets/images";
 
 const projects = [
   {
@@ -8,7 +11,10 @@ const projects = [
     title: "UI Animations",
     brief: "Explore UI animations with React to enhance user experience.",
     details: "This project demonstrates various interactive UI animations built using React and CSS animations.",
-    image: "https://www.creative-tim.com/blog/content/images/size/w960/wordpress/2021/01/blog-4-1.jpg",
+    image:  <img
+            src={im11}
+            alt="Professional Info Icon"
+          />,
     snapshots: [
       "https://via.placeholder.com/600x400?text=Snapshot+1",
       "https://via.placeholder.com/600x400?text=Snapshot+2",
@@ -20,7 +26,10 @@ const projects = [
     title: "UI Animations",
     brief: "Explore UI animations with React to enhance user experience.",
     details: "This project demonstrates various interactive UI animations built using React and CSS animations.",
-    image: "https://www.creative-tim.com/blog/content/images/size/w960/wordpress/2021/01/blog-4-1.jpg",
+    image:  <img
+            src={im10}
+            alt="Professional Info Icon"
+          />,
     snapshots: [
       "https://via.placeholder.com/600x400?text=Snapshot+1",
       "https://via.placeholder.com/600x400?text=Snapshot+2",
