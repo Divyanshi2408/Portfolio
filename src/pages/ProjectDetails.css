@@ -2,7 +2,7 @@
     text-align: center;
     color: #fff;
     background-color: #0d1117;
-    padding: 20px;
+    padding: 80px;
   }
   
   .main-image {
@@ -30,14 +30,17 @@
   
   .snapshot-images {
     display: flex;
+    flex-wrap: wrap;
     gap: 15px;
+    
     justify-content: center;
   }
   
   .snapshot-images img {
-    width: 300px;
-    height: 200px;
+    width: 700px;
+    height: 300px;
     object-fit: cover;
+    object-position: top;
     border-radius: 5px;
     border: 1px solid #333;
   }

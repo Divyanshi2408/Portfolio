@@ -11,13 +11,11 @@ const projects = [
     title: "UI Animations",
     brief: "Explore UI animations with React to enhance user experience.",
     details: "This project demonstrates various interactive UI animations built using React and CSS animations.",
-    image:  <img
-            src={im11}
-            alt="Professional Info Icon"
-          />,
+    image: im12,
     snapshots: [
-      "https://via.placeholder.com/600x400?text=Snapshot+1",
-      "https://via.placeholder.com/600x400?text=Snapshot+2",
+      im13,
+      im14,
+      im15,
     ],
     technologies: ["React", "CSS", "Framer Motion"],
   },
@@ -26,13 +24,10 @@ const projects = [
     title: "UI Animations",
     brief: "Explore UI animations with React to enhance user experience.",
     details: "This project demonstrates various interactive UI animations built using React and CSS animations.",
-    image:  <img
-            src={im10}
-            alt="Professional Info Icon"
-          />,
+    image: im16,
     snapshots: [
-      "https://via.placeholder.com/600x400?text=Snapshot+1",
-      "https://via.placeholder.com/600x400?text=Snapshot+2",
+      im17,
+      im18,
     ],
     technologies: ["React", "CSS", "Framer Motion"],
   },
@@ -41,10 +36,12 @@ const projects = [
     title: "UI Animations",
     brief: "Explore UI animations with React to enhance user experience.",
     details: "This project demonstrates various interactive UI animations built using React and CSS animations.",
-    image: "https://www.creative-tim.com/blog/content/images/size/w960/wordpress/2021/01/blog-4-1.jpg",
+    image: im26,
     snapshots: [
-      "https://via.placeholder.com/600x400?text=Snapshot+1",
-      "https://via.placeholder.com/600x400?text=Snapshot+2",
+      im27,
+      im28,
+      im29,
+      im30,
     ],
     technologies: ["React", "CSS", "Framer Motion"],
   },
@@ -62,7 +59,15 @@ const ProjectDetails = () => {
           <p className="brief">{project.brief}</p>
           <img src={project.image} alt={project.title} className="main-image" />
           <p>{project.details}</p>
-
+{/* Technologies Used */}
+<div className="technologies">
+            <h3>Technologies Used</h3>
+            <ul>
+              {project.technologies.map((tech, index) => (
+                <li key={index}>{tech}</li>
+              ))}
+            </ul>
+          </div>
           {/* Snapshots */}
           <div className="snapshots">
             <h3>Snapshots</h3>
@@ -73,15 +78,7 @@ const ProjectDetails = () => {
             </div>
           </div>
 
-          {/* Technologies Used */}
-          <div className="technologies">
-            <h3>Technologies Used</h3>
-            <ul>
-              {project.technologies.map((tech, index) => (
-                <li key={index}>{tech}</li>
-              ))}
-            </ul>
-          </div>
+          
         </>
       ) : (
         <p>Project not found!</p>
