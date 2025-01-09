@@ -45,6 +45,57 @@ const projects = [
     ],
     technologies: ["React", "CSS", "Framer Motion"],
   },
+  {
+    id: 4,
+    title: "UI Animations",
+    brief: "Explore UI animations with React to enhance user experience.",
+    details: "This project demonstrates various interactive UI animations built using React and CSS animations.",
+    image: im22,
+    snapshots: [
+      im23,
+      im24,
+      im25,
+    ],
+    technologies: ["React", "CSS", "Framer Motion"],
+  },
+  {
+    id: 5,
+    title: "UI Animations",
+    brief: "Explore UI animations with React to enhance user experience.",
+    details: "This project demonstrates various interactive UI animations built using React and CSS animations.",
+    image: im31,
+    snapshots: [
+      im32,
+      im33,
+      im34,
+      im35,
+    ],
+    technologies: ["React", "CSS", "Framer Motion"],
+  },
+  {
+    id: 6,
+    title: "UI Animations",
+    brief: "Explore UI animations with React to enhance user experience.",
+    details: "This project demonstrates various interactive UI animations built using React and CSS animations.",
+    image: im20,
+    snapshots: [
+      im19,
+      im21,
+      
+    ],
+    technologies: ["React", "CSS", "Framer Motion"],
+  },
+  {
+    id: 7,
+    title: "UI Animations",
+    brief: "Explore UI animations with React to enhance user experience.",
+    details: "This project demonstrates various interactive UI animations built using React and CSS animations.",
+    image: im11,
+    snapshots: [
+     
+    ],
+    technologies: ["React", "CSS", "Framer Motion"],
+  },
 ];
 
 const ProjectDetails = () => {

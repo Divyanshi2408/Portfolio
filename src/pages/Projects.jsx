@@ -9,12 +9,12 @@ import{
 } from "../Assets/images";
 const projects = [
   { id: 1, title: "UI Animations", category: "React", image:<img src={im12} alt="NPTEL" />, description: "React UI Animations" },
-  { id: 2, title: "Tetris Game", category: "Vue", image: <img src={im16} alt="NPTEL" />, description: "Vue Tetris Game" },
-  { id: 3, title: "Ethereum Project", category: "Vue", image: <img src={im26} alt="NPTEL" />, description: "Vue Ethereum" },
+  { id: 2, title: "Tetris Game", category: "React", image: <img src={im16} alt="NPTEL" />, description: "Vue Tetris Game" },
+  { id: 3, title: "Ethereum Project", category: "HTML", image: <img src={im26} alt="NPTEL" />, description: "Vue Ethereum" },
   { id: 4, title: "HTML Form Builder", category: "HTML", image: <img src={im22} alt="NPTEL" />, description: "HTML Form" },
-  { id: 5, title: "CSS Animations", category: "CSS", image:<img src={im31} alt="NPTEL" />, description: "CSS Animations" },
-  { id: 6, title: "CSS Animations", category: "CSS", image:<img src={im20} alt="NPTEL" />, description: "CSS Animations" },
-  { id: 7, title: "CSS Animations", category: "CSS", image:<img src={im11} alt="NPTEL" />, description: "CSS Animations" },
+  { id: 5, title: "CSS Animations", category: "HTML", image:<img src={im31} alt="NPTEL" />, description: "CSS Animations" },
+  { id: 6, title: "CSS Animations", category: "React", image:<img src={im20} alt="NPTEL" />, description: "CSS Animations" },
+  { id: 7, title: "CSS Animations", category: "React", image:<img src={im11} alt="NPTEL" />, description: "CSS Animations" },
 ];
 
 const categories = [
