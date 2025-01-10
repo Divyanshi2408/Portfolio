@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import {FaUser,FaStar,FaSchool,FaEnvelope,FaPhone,FaChevronDown,FaChevronRight,FaTimes,} from "react-icons/fa";
 import "./AboutPage.css";
 import{
-  im,im1,im2,im3,im4,im5,im6,im7,im8,im9,im11
+  im,im1,im2,im3,im4,im5,im6,im7,im8,im9
 } from "../Assets/images";
 
 const sidebarData = [
@@ -135,51 +135,44 @@ const contentMap = {
     description: "Details about certifications i have earned.",
     design: () => (
       <div className="commonn-section">
-        <h3>Open Source Contributions</h3>
-        <p>Contributed Projects:</p>
+        <p>I have earned certifications in various technologies to enhance my skills and stay updated with industry trends.</p>
         <div className="commonn-grid">
           <div className="commonn-card">
             <img
-              src="https://github.blog/wp-content/uploads/2022/10/hacktoberfestbanner.jpeg?fit=1200%2C630"
+              src={im4}
               alt="Open Source Project 1"
             />
-            <p>React UI Animations</p>
+            <p>NPTEL</p>
           </div>
           <div className="commonn-card">
             <img
-              src="https://via.placeholder.com/300x200?text=Project+2"
+              src={im5}
               alt="Open Source Project 2"
             />
-            <p>Vue Tetris Game</p>
+            <p>MICROSOFT AZURE</p>
           </div>
           <div className="commonn-card">
             <img
-              src="https://via.placeholder.com/300x200?text=Project+3"
+              src={im6}
               alt="Open Source Project 3"
             />
-            <p>Next.js Starter Template</p>
+            <p>ORACLE</p>
           </div>
           <div className="commonn-card">
             <img
-              src="https://via.placeholder.com/300x200?text=Project+4"
+              src={im7}
               alt="Open Source Project 4"
             />
-            <p>Node.js API Boilerplate</p>
+            <p>CONGNIZANT</p>
           </div>
           <div className="commonn-card">
             <img
-              src="https://via.placeholder.com/300x200?text=Project+5"
+              src={im8}
               alt="Open Source Project 5"
             />
-            <p>Python Data Processing Library</p>
+            <p>COURSERA</p>
           </div>
-          <div className="commonn-card">
-            <img
-              src="https://via.placeholder.com/300x200?text=Project+6"
-              alt="Open Source Project 6"
-            />
-            <p>Flutter E-Commerce App</p>
-          </div>
+         
         </div>
       </div>
     ),
@@ -306,51 +299,53 @@ const contentMap = {
     description: "Highlight your contributions to open-source projects.",
     design: () => (
       <div className="co-section">
-        <h3>Open Source Contributions</h3>
-        <p>Contributed Projects:</p>
+        <p>I am passionate about contributing to open-source, 
+        collaborating with global developers to enhance software 
+        and solve real-world problems. Through programs like GSSoC, 
+        Social Summer of Code, and Hacktoberfest, I’ve refined my 
+        technical skills and contributed to impactful projects.</p>
         <div className="co-grid">
           <div className="co-card">
             <img
               src="https://github.blog/wp-content/uploads/2022/10/hacktoberfestbanner.jpeg?fit=1200%2C630"
               alt="Open Source Project 1"
             />
-            <p>React UI Animations</p>
+            <p>Actively participated in Hacktoberfest,
+             where I made multiple contributions to various open-source projects.
+              I worked on tasks such as resolving issues, improving documentation,
+               and helping with feature enhancements. This initiative not only 
+               improved my coding skills but also deepened my understanding of 
+               collaboration in the open-source community.</p>
+          </div>
+         
+          <div className="co-card">
+            <img
+              src="https://assets.devfolio.co/hackathons/c1573e1780a9481e97869fcd6fbb07fa/assets/cover/136.png"
+              alt="Open Source Project 3"
+            />
+            <p>Contributed to Social Summer of Code, 
+            which allowed me to work on projects designed 
+            to make a positive impact on society. I helped in
+             enhancing functionality and improving the user experience 
+             of open-source social projects by contributing code fixes 
+             and testing new features. My involvement in the program gave 
+             me exposure to best practices in open-source development and teamwork.</p>
           </div>
           <div className="co-card">
             <img
               src="https://cdn.hashnode.com/res/hashnode/image/upload/v1623661215136/jPWcZyekD.png?w=1600&h=840&fit=crop&crop=entropy&auto=compress,format&format=webp"
               alt="Open Source Project 2"
             />
-            <p>Vue Tetris Game</p>
+            <p>Participated in GirlScript Summer of Code, 
+            a program aimed at encouraging women to engage in
+             open-source development. During the program, I contributed
+              to multiple open-source projects by identifying bugs,
+               improving documentation, and collaborating with a global 
+               team of developers. This experience helped me improve my
+                problem-solving skills and gain hands-on experience with 
+                version control systems like Git.</p>
           </div>
-          <div className="co-card">
-            <img
-              src="https://assets.devfolio.co/hackathons/c1573e1780a9481e97869fcd6fbb07fa/assets/cover/136.png"
-              alt="Open Source Project 3"
-            />
-            <p>Next.js Starter Template</p>
-          </div>
-          <div className="co-card">
-            <img
-              src="https://via.placeholder.com/300x200?text=Project+4"
-              alt="Open Source Project 4"
-            />
-            <p>Node.js API Boilerplate</p>
-          </div>
-          <div className="co-card">
-            <img
-              src="https://via.placeholder.com/300x200?text=Project+5"
-              alt="Open Source Project 5"
-            />
-            <p>Python Data Processing Library</p>
-          </div>
-          <div className="co-card">
-            <img
-              src="https://via.placeholder.com/300x200?text=Project+6"
-              alt="Open Source Project 6"
-            />
-            <p>Flutter E-Commerce App</p>
-          </div>
+         
         </div>
       </div>
     ),

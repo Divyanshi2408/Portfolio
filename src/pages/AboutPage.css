@@ -300,7 +300,7 @@
 .timeline-content {
   background: linear-gradient(to right, #250f4e, #1d4488);
   color: #fff;
-  padding: 15px 50px;
+  padding: 15px 10px;
   position: relative;
   border-radius: 8px;
   max-width: 300px; 
@@ -339,7 +339,7 @@
 
 .date {
  position: relative;
-  left: calc( -350px); /* Adjust distance from center line */
+  left: calc( -300px); /* Adjust distance from center line */
   top: 5px; /* Align vertically with content */
   color: #fff;
   font-size: 16px;
@@ -347,7 +347,7 @@
 }
 .year {
   position: relative;
-   left: calc( 350px); /* Adjust distance from center line */
+   left: calc( 300px); /* Adjust distance from center line */
    top: 5px; /* Align vertically with content */
    color: #fff;
    font-size: 16px;
@@ -767,15 +767,10 @@
   color: #ffffff;
 }
 
-.co-section h3 {
-  font-size: 24px;
-  margin-bottom: 10px;
-  color: #ff4081;
-}
-
 .co-section p {
   font-size: 18px;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
+  color: #607B96;
 }
 
 .co-grid {
@@ -786,6 +781,7 @@
 
 .co-card {
   display: flex;
+  gap: 20px;
   background-color: #2a2a3f;
   border-radius: 8px;
   text-align: center;
@@ -801,6 +797,7 @@
 }
 
 .co-card p {
+  text-align: justify;
   font-size: 16px;
-  color: #fff;
+  color: #baccdd;
 }
