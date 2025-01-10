@@ -24,7 +24,7 @@ const sidebarData = [
         alt="Professional Info Icon"
       />
     ),
-    subItems: ["Bio", "Education","Art"],
+    subItems: ["Bio", "Education","Hobbies"],
   },
   {
     label: "Extracurricular Activities",
@@ -181,7 +181,14 @@ const contentMap = {
     description: "Your biography goes here, describing who you are.",
     design: () => (
       <div className="bio-section">
-        <p>Hi! I am a passionate developer with a love for solving problems and creating meaningful applications.</p>
+        <p>Hi, I am Divyanshi Pal 👋</p>
+
+<p>I am a Computer Science Engineering graduate 👩‍🎓 with a passion for building innovative and impactful software solutions. Currently, I am preparing to become a full-stack developer, focusing on mastering both frontend and backend technologies to create end-to-end web applications.</p>
+
+<p>With a strong foundation in computer science and programming, I have honed my skills in frontend development using HTML, CSS, JavaScript, and React. I enjoy designing intuitive and user-friendly interfaces that provide seamless experiences. My current journey includes delving deeper into React, exploring hooks, state management, and routing to build dynamic and responsive web applications.</p>
+
+<p>As I progress in my full-stack development journey, I am excited to expand my knowledge of backend technologies and integrate them with my frontend expertise. I am driven by a passion for learning and a commitment to developing solutions that make a difference in people's lives.</p>
+
       </div>
     ),
   },
@@ -241,7 +248,7 @@ const contentMap = {
       </div>
     ),
   },
-  Art: {
+  Hobbies: {
     description: "Details about your hiking adventures.",
     design: () => (
       <div className="common-section">
@@ -434,10 +441,10 @@ const AboutPage = () => {
     <img src={im9} alt="Your Name" />
   </div>
   <div className="intro-text">
-    <p>Hello World! My name is <span className="highlight">Divyanshi pal</span></p>
+    <p>Hello! My name is <span className="highlight">Divyanshi pal</span></p>
     <h1 className="role-title">Web developer</h1>
     <p className="description">
-      lorem  lorem  lorem  lorem  lorem  lorem  lorem  lorem  lorem  lorem  lorem  lorem  lorem
+      Passionate web developer focused on building dynamic, user-friendly applications.
     </p>
   </div>
   <div className="tech-icons">
