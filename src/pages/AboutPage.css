@@ -711,3 +711,96 @@
 .intro-text p, .about-section p {
   font-size: clamp(1rem, 1.5vw, 1.2rem);
 }
+
+
+.commonn-section {
+  margin: 20px;
+  padding: 20px;
+  background-color: #1e1e2f;
+  border-radius: 10px;
+  color: #ffffff;
+}
+
+.commonn-section h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #ff4081;
+}
+
+.commonn-section p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.commonn-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.commonn-card {
+  background-color: #2a2a3f;
+  border-radius: 8px;
+  text-align: center;
+  padding: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.commonn-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+.commonn-card p {
+  font-size: 16px;
+  color: #fff;
+}
+
+
+.co-section {
+  margin: 20px;
+  padding: 20px;
+  background-color: #1e1e2f;
+  border-radius: 10px;
+  color: #ffffff;
+}
+
+.co-section h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #ff4081;
+}
+
+.co-section p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.co-grid {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  gap: 20px;
+}
+
+.co-card {
+  display: flex;
+  background-color: #2a2a3f;
+  border-radius: 8px;
+  text-align: center;
+  padding: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.co-card img {
+  width: 45%;
+  height: auto;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+.co-card p {
+  font-size: 16px;
+  color: #fff;
+}

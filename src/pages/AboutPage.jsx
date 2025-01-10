@@ -1,18 +1,8 @@
 import React, { useState } from "react";
 import {FaUser,FaStar,FaSchool,FaEnvelope,FaPhone,FaChevronDown,FaChevronRight,FaTimes,} from "react-icons/fa";
 import "./AboutPage.css";
-// import im from "../Assets/images/pr.png"
-// import im1 from "../Assets/images/pe.png"
-// import im2 from "../Assets/images/ho.png"
-// import im3 from "../Assets/images/sub.png"
-// import im4 from "../Assets/images/NPTEL.jpg"
-// import im5 from "../Assets/images/mazure.jpg"
-// import im6 from "../Assets/images/Oracle.jpg"
-// import im7 from "../Assets/images/Cognizant.jpg"
-// import im8 from "../Assets/images/co.jpeg"
-// import im9 from "../Assets/images/my.png"
 import{
-  im,im1,im2,im3,im4,im5,im6,im7,im8,im9
+  im,im1,im2,im3,im4,im5,im6,im7,im8,im9,im11
 } from "../Assets/images";
 
 const sidebarData = [
@@ -34,17 +24,17 @@ const sidebarData = [
         alt="Professional Info Icon"
       />
     ),
-    subItems: ["Bio", "Education"],
+    subItems: ["Bio", "Education","Art"],
   },
   {
-    label: "Hobbies",
+    label: "Extracurricular Activities",
     icon: (
       <img
         src={im2}
         alt="Professional Info Icon"
       />
     ),
-    subItems: ["Music", "Books", "Art"],
+    subItems: ["OpenSource"],
   },
 ];
 
@@ -144,60 +134,54 @@ const contentMap = {
   Certificates: {
     description: "Details about certifications i have earned.",
     design: () => (
-      <div className="common-section"> 
-      <h3>Certificates</h3>
-      <div class="common-grids">
-  <div class="grid-item">
-  <img
-        src={im4}
-        alt="Professional Info Icon"
-      />
-    <p>IOT</p>
-  </div>
-  <div class="grid-item">
-  <img
-        src={im5}
-        alt="Professional Info Icon"
-      />
-    <p>ms-azure 900</p>
-  </div>
-  <div class="grid-item">
-  <img
-        src={im6}
-        alt="Professional Info Icon"
-      />
-    <p>Item 3</p>
-  </div>
-  
- 
-  </div>
-  <div class="common-grids">
-  <div class="grid-item">
-  <img
-        src={im7}
-        alt="Professional Info Icon"
-      />
-    <p>IOT</p>
-  </div>
-  <div class="grid-item">
-  <img
-        src={im8}
-        alt="Professional Info Icon"
-      />
-    <p>ms-azure 900</p>
-  </div>
-  <div class="grid-item">
-  <img
-        src={im6}
-        alt="Professional Info Icon"
-      />
-    <p>Item 3</p>
-  </div>
-  
- 
-  </div>
-
-    </div>
+      <div className="commonn-section">
+        <h3>Open Source Contributions</h3>
+        <p>Contributed Projects:</p>
+        <div className="commonn-grid">
+          <div className="commonn-card">
+            <img
+              src="https://github.blog/wp-content/uploads/2022/10/hacktoberfestbanner.jpeg?fit=1200%2C630"
+              alt="Open Source Project 1"
+            />
+            <p>React UI Animations</p>
+          </div>
+          <div className="commonn-card">
+            <img
+              src="https://via.placeholder.com/300x200?text=Project+2"
+              alt="Open Source Project 2"
+            />
+            <p>Vue Tetris Game</p>
+          </div>
+          <div className="commonn-card">
+            <img
+              src="https://via.placeholder.com/300x200?text=Project+3"
+              alt="Open Source Project 3"
+            />
+            <p>Next.js Starter Template</p>
+          </div>
+          <div className="commonn-card">
+            <img
+              src="https://via.placeholder.com/300x200?text=Project+4"
+              alt="Open Source Project 4"
+            />
+            <p>Node.js API Boilerplate</p>
+          </div>
+          <div className="commonn-card">
+            <img
+              src="https://via.placeholder.com/300x200?text=Project+5"
+              alt="Open Source Project 5"
+            />
+            <p>Python Data Processing Library</p>
+          </div>
+          <div className="commonn-card">
+            <img
+              src="https://via.placeholder.com/300x200?text=Project+6"
+              alt="Open Source Project 6"
+            />
+            <p>Flutter E-Commerce App</p>
+          </div>
+        </div>
+      </div>
     ),
   },
   Bio: {
@@ -264,60 +248,6 @@ const contentMap = {
       </div>
     ),
   },
-  
-  Music: {
-    description: "Share your favorite music genres or instruments you play.",
-    design: () => (
-      <div className="music-section">
-        <h3>Your Favorite Music</h3>
-        <p>Genres: Rock, Jazz, Classical</p>
-        <p>Instruments: Guitar, Piano</p>
-      </div>
-    ),
-  },
-  Books: {
-    description: "Discuss your favorite books or genres.",
-    design: () => (
-      <div className="common-section">
-      <h3>Art and craft</h3>
-      <p>Favorite Trail: Rocky Mountains</p>
-      <div className="common-grid">
-        <div className="common-card">
-          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZvHSiU-riaUQaHx4aL5OmVM3DvIyFM0uG2w&sg" alt="Hiking Trail 1" />
-          <p>Trail 1</p>
-        </div>
-        <div className="common-card">
-          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZvHSiU-riaUQaHx4aL5OmVM3DvIyFM0uG2w&s" alt="Hiking Trail 2" />
-          <p>Trail 2</p>
-        </div>
-        <div className="common-card">
-          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZvHSiU-riaUQaHx4aL5OmVM3DvIyFM0uG2w&s" alt="Hiking Trail 3" />
-          <p>Trail 3</p>
-        </div>
-        <div className="common-card">
-          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZvHSiU-riaUQaHx4aL5OmVM3DvIyFM0uG2w&s" alt="Hiking Trail 4" />
-          <p>Trail 4</p>
-        </div>
-        <div className="common-card">
-          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZvHSiU-riaUQaHx4aL5OmVM3DvIyFM0uG2w&sg" alt="Hiking Trail 1" />
-          <p>Trail 1</p>
-        </div>
-        <div className="common-card">
-          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZvHSiU-riaUQaHx4aL5OmVM3DvIyFM0uG2w&s" alt="Hiking Trail 2" />
-          <p>Trail 2</p>
-        </div>
-        <div className="common-card">
-          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZvHSiU-riaUQaHx4aL5OmVM3DvIyFM0uG2w&s" alt="Hiking Trail 3" />
-          <p>Trail 3</p>
-        </div>
-        <div className="common-card">
-          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZvHSiU-riaUQaHx4aL5OmVM3DvIyFM0uG2w&s" alt="Hiking Trail 4" />
-          <p>Trail 4</p>
-        </div>
-      </div>
-    </div>
-    ),
-  },
   Art: {
     description: "Details about your hiking adventures.",
     design: () => (
@@ -361,6 +291,71 @@ const contentMap = {
     </div>
     ),
   },
+  
+  Music: {
+    description: "Share your favorite music genres or instruments you play.",
+    design: () => (
+      <div className="music-section">
+        <h3>Your Favorite Music</h3>
+        <p>Genres: Rock, Jazz, Classical</p>
+        <p>Instruments: Guitar, Piano</p>
+      </div>
+    ),
+  },
+  OpenSource :{
+    description: "Highlight your contributions to open-source projects.",
+    design: () => (
+      <div className="co-section">
+        <h3>Open Source Contributions</h3>
+        <p>Contributed Projects:</p>
+        <div className="co-grid">
+          <div className="co-card">
+            <img
+              src="https://github.blog/wp-content/uploads/2022/10/hacktoberfestbanner.jpeg?fit=1200%2C630"
+              alt="Open Source Project 1"
+            />
+            <p>React UI Animations</p>
+          </div>
+          <div className="co-card">
+            <img
+              src="https://cdn.hashnode.com/res/hashnode/image/upload/v1623661215136/jPWcZyekD.png?w=1600&h=840&fit=crop&crop=entropy&auto=compress,format&format=webp"
+              alt="Open Source Project 2"
+            />
+            <p>Vue Tetris Game</p>
+          </div>
+          <div className="co-card">
+            <img
+              src="https://assets.devfolio.co/hackathons/c1573e1780a9481e97869fcd6fbb07fa/assets/cover/136.png"
+              alt="Open Source Project 3"
+            />
+            <p>Next.js Starter Template</p>
+          </div>
+          <div className="co-card">
+            <img
+              src="https://via.placeholder.com/300x200?text=Project+4"
+              alt="Open Source Project 4"
+            />
+            <p>Node.js API Boilerplate</p>
+          </div>
+          <div className="co-card">
+            <img
+              src="https://via.placeholder.com/300x200?text=Project+5"
+              alt="Open Source Project 5"
+            />
+            <p>Python Data Processing Library</p>
+          </div>
+          <div className="co-card">
+            <img
+              src="https://via.placeholder.com/300x200?text=Project+6"
+              alt="Open Source Project 6"
+            />
+            <p>Flutter E-Commerce App</p>
+          </div>
+        </div>
+      </div>
+    ),
+  },
+
  
 };
 
