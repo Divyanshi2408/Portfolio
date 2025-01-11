@@ -157,6 +157,7 @@
 
   .project-card img {
     height: 120px;
+    padding: 5px;
   }
 
   .project-details h4 {
@@ -175,15 +176,18 @@
   }
 
   .project-card img {
+    padding: 5px;
     height: 100px;
   }
 
   .project-details h4 {
     font-size: 0.9rem;
+    
   }
 
   .project-details p {
     font-size: 0.75rem;
+    padding: 0px 8px;
   }
 
   .view-button {

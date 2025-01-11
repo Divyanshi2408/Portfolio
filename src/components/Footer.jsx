@@ -8,7 +8,7 @@ const Footer = () => {
       <div className="footer-left">
         <span>find me in:</span>
         <a
-  href="https://www.linkedin.com/in/your-linkedin-profile/"
+  href="https://www.linkedin.com/in/divyanshi-pal/"
   target="_blank"
   rel="noopener noreferrer"
   aria-label="LinkedIn"
