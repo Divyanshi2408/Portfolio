@@ -891,6 +891,35 @@
     }
  
 }
+@media (max-width: 445px) {
+  .timeline-content {
+    width:56%;
+  }
+  .timeline-content h3{
+    font-size:14px;
+  }
+  .timeline-content p{
+    font-size:10px;
+  }
+  .date {
+    left: calc( -70px); /* Adjust distance from center line */
+    top:170px ;
+     
+   }
+   
+   .year {
+    
+     position: relative;
+      left: calc( -70px); /* Adjust distance from center line */
+      top:170px;
+      
+    }
+    .timeline-section {
+      padding: 40px 0px;
+      
+    }
+ 
+}
 
 /* Responsive adjustments for image grids and cards */
 .common-grid, .common-grids {
@@ -992,7 +1021,7 @@
 }
 
 .co-card p {
-  text-align: justify;
+  text-align: left;
   font-size: 16px;
   color: #baccdd;
 }
