@@ -14,7 +14,7 @@
     border-radius: 8px;
     box-shadow: 0 0 15px rgba(0, 255, 255, 0.5);
   }
-  
+
   .brief {
     font-size: 1.2rem;
     font-weight: 600;
@@ -36,14 +36,13 @@
     display: flex;
     flex-wrap: wrap;
     gap: 15px;
-    
     justify-content: center;
   }
   
   .snapshot-images img {
     box-shadow: 0 0 15px rgba(0, 255, 255, 0.5);
-    width: 700px;
-    height: 300px;
+    width: 49%;
+    max-height: 250px;
     object-fit: cover;
     object-position: top;
     border-radius: 5px;
@@ -64,4 +63,28 @@
     border-radius: 5px;
     color: #c9d1d9;
   }
-  
+  @media (max-width: 928px) {
+    .main-image {
+      width: 80%;
+    }
+    .snapshot-images img {
+      width: 70%;
+    }
+  }
+
+  @media (max-width: 530px) {
+    .main-image {
+      width: 90%;
+    }
+    .snapshot-images img {
+      width: 100%;
+    }
+  }
+  @media (max-width: 450px) {
+    .main-image {
+      width: 120%;
+    }
+    .snapshot-images img {
+      width: 120%;
+    }
+  }

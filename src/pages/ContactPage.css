@@ -58,7 +58,16 @@
   color: red;
   margin-top: 10px;
 }
-
+.social-links {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.social-links a{
+  text-decoration: none;
+  color: #607B96;
+}
 /* Responsive Design */
 @media (max-width: 1024px) {
   .contact-page {
@@ -66,7 +75,7 @@
   }
 
   .contact-form {
-    width: 80%;
+    width: 65%;
     padding: 60px 80px;
   }
 
@@ -89,7 +98,7 @@
 
   .contact-form {
     width: 90%;
-    padding: 40px 20px;
+    padding: 30px 20px 100px 20px;
   }
 
   .contact-form label {
@@ -113,8 +122,8 @@
 
 @media (max-width: 480px) {
   .contact-form {
-    width: 100%;
-    padding: 20px 10px;
+    width: 85%;
+    padding: 20px 20px 90px 20px;
   }
 
   .contact-form label {

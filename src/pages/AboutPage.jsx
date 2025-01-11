@@ -201,13 +201,15 @@ const contentMap = {
          
           <div className="timeline-item left">
           <div className="date r-date">
+          
             <p>2020-2024</p>
+           
           </div>
             <div className="timeline-icon">
               <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSvhIRmO4HJufxuC2kmA2VtoTy1zMM4XF75A&s" alt="Graduation Icon" />
             </div>
             <div className="timeline-content">
-              <h3>Bachelor of Technology (CSE)</h3>
+              <h3>Bachelor of Technology (CSE) [8.5 CGP]</h3>
               <p>Dr. A.P.J. Abdul Kalam Technical University</p>
            
             </div>
@@ -223,7 +225,7 @@ const contentMap = {
               <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBAoQgncMuqSmAvojEND0m0jy0Hp8qNo0q7PZrqFnK_1w5mnWE-IdtT1UMZY0AFcOh-qY&usqp=CAU" alt="College Icon" />
             </div>
             <div className="timeline-content">
-              <h3>Higher Secondary Education</h3>
+              <h3>Higher Secondary Education [76%]</h3>
               <p>Queen Victoria Girls Inter College </p>
               
             </div>
@@ -239,7 +241,7 @@ const contentMap = {
               <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBAoQgncMuqSmAvojEND0m0jy0Hp8qNo0q7PZrqFnK_1w5mnWE-IdtT1UMZY0AFcOh-qY&usqp=CAU" alt="School Icon" />
             </div>
             <div className="timeline-content">
-              <h3>Secondary Education</h3>
+              <h3>Secondary Education<br/>[89%]</h3>
               <p>Queen Victoria Girls Inter College</p>
             
             </div>

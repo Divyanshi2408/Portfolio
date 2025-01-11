@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import emailjs from 'emailjs-com';
-import './ContactPage.css'; // Add custom styles if needed
+import { FaExternalLinkAlt } from "react-icons/fa";
+import './ContactPage.css'; 
 
 const Contact = () => {
   const [formData, setFormData] = useState({ name: '', email: '', message: '' });
@@ -47,11 +48,11 @@ const Contact = () => {
         <h3>contacts</h3>
         <span> Divyanshipal2808@gmail.com</span>
         <h3>find-me-also-in</h3>
-        <ul className="social-links">
-          <li><a href="#">Linkedin account</a></li>
-          <li><a href="#">Github account</a></li>
-          <li><a href="#">Instagram account</a></li>
-        </ul>
+        
+          <li className="social-links"><FaExternalLinkAlt /><a href="https://www.linkedin.com/in/divyanshi-pal/">Linkedin account</a></li>
+          <li className="social-links"><FaExternalLinkAlt /><a href="https://github.com/Divyanshi2408">Github account</a></li>
+          <li className="social-links"><FaExternalLinkAlt /><a href="https://www.instagram.com/divyanshipal2808/">Instagram account</a></li>
+        
       </div>
 
       <div className="contact-form">
