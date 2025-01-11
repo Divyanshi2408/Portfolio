@@ -8,13 +8,13 @@ import{
   im10,im11,im12,im13,im14,im15,im16,im17,im18,im19,im20,im21,im22,im23,im24,im25,im26,im27,im28,im29,im30,im31,im32,im33,im34,im35
 } from "../Assets/images";
 const projects = [
-  { id: 1, title: "UI Animations", category: "React", image:<img src={im12} alt="NPTEL" />, description: "React UI Animations" },
-  { id: 2, title: "Tetris Game", category: "React", image: <img src={im16} alt="NPTEL" />, description: "Vue Tetris Game" },
-  { id: 3, title: "Ethereum Project", category: "HTML", image: <img src={im26} alt="NPTEL" />, description: "Vue Ethereum" },
-  { id: 4, title: "HTML Form Builder", category: "HTML", image: <img src={im22} alt="NPTEL" />, description: "HTML Form" },
-  { id: 5, title: "CSS Animations", category: "HTML", image:<img src={im31} alt="NPTEL" />, description: "CSS Animations" },
-  { id: 6, title: "CSS Animations", category: "React", image:<img src={im20} alt="NPTEL" />, description: "CSS Animations" },
-  { id: 7, title: "CSS Animations", category: "React", image:<img src={im11} alt="NPTEL" />, description: "CSS Animations" },
+  { id: 1, title: "Music Player Web App", category: "React", image:<img src={im12} alt="Music" />, description: "I developed a dynamic and interactive music player web application." },
+  { id: 2, title: " Recipe Finder Web App", category: "React", image: <img src={im16} alt="recipe" />, description: "I created a Recipe Finder web application using React" },
+  { id: 3, title: "Airline Website", category: "HTML", image: <img src={im26} alt="airline" />, description: "I created a dynamic and user-friendly Airline Website as a frontend-only project" },
+  { id: 4, title: "Travel Website ", category: "HTML", image: <img src={im22} alt="travel" />, description: "I created a Travel Website using HTML, CSS, and JavaScript, aimed at showcasing travel destinations and services. " },
+  { id: 5, title: "Flower Website", category: "HTML", image:<img src={im31} alt="flower" />, description: "This Flower Website was developed using HTML, CSS, and JavaScript" },
+  { id: 6, title: "Sorting Algorithm Visualizer", category: "React", image:<img src={im20} alt="sorting" />, description: "The Sorting Algorithm Visualizer is a React-based application that visually demonstrates various sorting algorithms in action." },
+  { id: 7, title: "To-Do List App ", category: "React", image:<img src={im11} alt="todo" />, description: "I developed a To-Do List App using React, designed to help users efficiently manage their daily tasks. " },
 ];
 
 const categories = [
