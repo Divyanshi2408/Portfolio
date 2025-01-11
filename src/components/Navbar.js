@@ -9,6 +9,10 @@ const Navbar = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
   };
 
+  const closeMobileMenu = () => {
+    setIsMobileMenuOpen(false);
+  };
+
   return (
     <nav className="navbar">
       <div className="navbar-brand">divyanshi-pal</div>
@@ -21,6 +25,7 @@ const Navbar = () => {
             <NavLink
               to="/hello"
               className={({ isActive }) => (isActive ? "navbar-link active" : "navbar-link")}
+              onClick={closeMobileMenu} // Close the mobile menu when clicked
             >
               _hello
             </NavLink>
@@ -29,6 +34,7 @@ const Navbar = () => {
             <NavLink
               to="/about-me"
               className={({ isActive }) => (isActive ? "navbar-link active" : "navbar-link")}
+              onClick={closeMobileMenu} // Close the mobile menu when clicked
             >
               _about-me
             </NavLink>
@@ -37,6 +43,7 @@ const Navbar = () => {
             <NavLink
               to="/projects"
               className={({ isActive }) => (isActive ? "navbar-link active" : "navbar-link")}
+              onClick={closeMobileMenu} // Close the mobile menu when clicked
             >
               _projects
             </NavLink>
@@ -47,11 +54,11 @@ const Navbar = () => {
             <NavLink
               to="/contact-me"
               className={({ isActive }) => (isActive ? "navbar-link active" : "navbar-link")}
+              onClick={closeMobileMenu} // Close the mobile menu when clicked
             >
               _contact-me
             </NavLink>
           </li>
-          
         </div>
       </ul>
     </nav>

@@ -24,7 +24,7 @@ const sidebarData = [
         alt="Professional Info Icon"
       />
     ),
-    subItems: ["Bio", "Education","Hobbies"],
+    subItems: ["Bio", "Education"],
   },
   {
     label: "Extracurricular Activities",
@@ -46,11 +46,22 @@ const contentMap = {
     description: "This is the content for Experience. It contains details about your professional journey.",
     design: () => (
       <div className="experience-section">
-        <p><strong>Professional Highlights:</strong></p>
-        <ul>
-          <li>Worked as a Software Engineer at XYZ Corp.</li>
-          <li>Developed scalable web applications.</li>
-        </ul>
+
+<p><strong>Software Engineer Intern</strong><br />
+  <strong>Aerial Delivery Research and Development Establishment (ADRDE)</strong><br />
+  <em>June 2023 - August 2023</em></p>
+
+        <p>As a Software Engineer Intern at ADRDE, I engineered 
+        and optimized Android-based applications to improve the 
+        operational efficiency of field teams. I utilized Android 
+        development tools such as Android Studio and Java to develop
+        and maintain high-performance mobile applications. My role 
+        also involved conducting unit testing, debugging, and performance 
+        optimization to ensure the app's stability and user satisfaction.
+          Additionally, I contributed to system design documentation, ensuring 
+          a clear understanding of the app's architecture and functionality, 
+          which provided a foundation for future improvements.</p>
+
       </div>
     ),
   },
@@ -250,49 +261,7 @@ const contentMap = {
       </div>
     ),
   },
-  Hobbies: {
-    description: "Details about your hiking adventures.",
-    design: () => (
-      <div className="common-section">
-      <h3>Art and craft</h3>
-      <p>Favorite Trail: Rocky Mountains</p>
-      <div className="common-grid">
-        <div className="common-card">
-          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZvHSiU-riaUQaHx4aL5OmVM3DvIyFM0uG2w&sg" alt="Hiking Trail 1" />
-          <p>Trail 1</p>
-        </div>
-        <div className="common-card">
-          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZvHSiU-riaUQaHx4aL5OmVM3DvIyFM0uG2w&s" alt="Hiking Trail 2" />
-          <p>Trail 2</p>
-        </div>
-        <div className="common-card">
-          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZvHSiU-riaUQaHx4aL5OmVM3DvIyFM0uG2w&s" alt="Hiking Trail 3" />
-          <p>Trail 3</p>
-        </div>
-        <div className="common-card">
-          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZvHSiU-riaUQaHx4aL5OmVM3DvIyFM0uG2w&s" alt="Hiking Trail 4" />
-          <p>Trail 4</p>
-        </div>
-        <div className="common-card">
-          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZvHSiU-riaUQaHx4aL5OmVM3DvIyFM0uG2w&sg" alt="Hiking Trail 1" />
-          <p>Trail 1</p>
-        </div>
-        <div className="common-card">
-          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZvHSiU-riaUQaHx4aL5OmVM3DvIyFM0uG2w&s" alt="Hiking Trail 2" />
-          <p>Trail 2</p>
-        </div>
-        <div className="common-card">
-          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZvHSiU-riaUQaHx4aL5OmVM3DvIyFM0uG2w&s" alt="Hiking Trail 3" />
-          <p>Trail 3</p>
-        </div>
-        <div className="common-card">
-          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZvHSiU-riaUQaHx4aL5OmVM3DvIyFM0uG2w&s" alt="Hiking Trail 4" />
-          <p>Trail 4</p>
-        </div>
-      </div>
-    </div>
-    ),
-  },
+  
   
   Music: {
     description: "Share your favorite music genres or instruments you play.",

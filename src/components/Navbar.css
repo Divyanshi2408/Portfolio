@@ -28,7 +28,7 @@
     list-style: none;
     margin: 0;
     padding: 0;
-    flex: 1; /* Allows spacing between left and right */
+    flex: 1; 
   }
   .navbar-left {
     display: flex;
@@ -98,4 +98,10 @@
     }
   }
   
+  .navbar-links {
+    transition: transform 0.3s ease-in-out;
+  }
   
+  .navbar-links.mobile-menu-open {
+    transform: translateX(0);
+  }
