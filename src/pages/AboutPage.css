@@ -320,7 +320,7 @@
   height: 0;
   border-top: 10px solid transparent;
   border-bottom: 10px solid transparent;
-  border-right: 15px solid #16356b;
+  border-right: 15px solid #250f4e;
   
 }
 .timeline-item.left .timeline-content::before {
@@ -589,7 +589,7 @@
   
   .timeline-item.right .timeline-content::before {
     left: -15px; /* Point triangle on the right */
-    border-right: 15px solid #1d4488;
+    border-right: 15px solid #250f4e;
   }
   
   .date {
@@ -763,6 +763,12 @@
   .role-title {
     font-size: 1.8rem; /* Adjust font size for smaller screens */
   }
+  .experience-section{
+    padding-bottom: 50px;
+  }
+  .bio-section{
+    padding-bottom: 50px;
+  }
   
 }
 @media (max-width: 688px){
@@ -919,6 +925,27 @@
       
     }
  
+}
+@media (max-width: 400px){
+  .timeline-content {
+    width:70%;
+    margin-left: 55px;
+    margin-right: -50px;
+    
+  }
+  .date {
+    left: calc( -60px); /* Adjust distance from center line */
+    top:170px ;
+     
+   }
+   
+   .year {
+    
+     position: relative;
+      left: calc( -60px); /* Adjust distance from center line */
+      top:150px;
+      
+    }
 }
 
 /* Responsive adjustments for image grids and cards */
