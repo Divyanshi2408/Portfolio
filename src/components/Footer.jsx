@@ -16,7 +16,7 @@ const Footer = () => {
   <FaLinkedin className="icon linkedin" />
 </a>
 <a
-  href="https://twitter.com/your-twitter-profile"
+  href="https://twitter.com/twitter-profile"
   target="_blank"
   rel="noopener noreferrer"
   aria-label="Twitter"
@@ -26,7 +26,7 @@ const Footer = () => {
       </div>
       <div className="footer-right">
       <a className="user"
-  href="https://github.com/your-github-profile"
+  href="https://github.com/Divyanshi2408"
   target="_blank"
   rel="noopener noreferrer"
   aria-label="GitHub"
