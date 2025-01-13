@@ -33,7 +33,7 @@ const HomePage = () => {
         <div className="self">
           <h4 className="short">Hi all, I am</h4>
           <h1 className="name">Divyanshi Pal </h1>
-          <h3 className="role">Front-end Developer</h3>
+          <h3 className="role">Web Developer</h3>
         </div>
         <p className="github-link">
           Complete the game to continue
