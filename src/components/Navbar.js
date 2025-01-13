@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { NavLink } from "react-router-dom"; // Import NavLink
+import { NavLink } from "react-router-dom";
 import "./Navbar.css";
 
 const Navbar = () => {
@@ -25,7 +25,7 @@ const Navbar = () => {
             <NavLink
               to="/hello"
               className={({ isActive }) => (isActive ? "navbar-link active" : "navbar-link")}
-              onClick={closeMobileMenu} // Close the mobile menu when clicked
+              onClick={closeMobileMenu} 
             >
               _hello
             </NavLink>
@@ -34,7 +34,7 @@ const Navbar = () => {
             <NavLink
               to="/about-me"
               className={({ isActive }) => (isActive ? "navbar-link active" : "navbar-link")}
-              onClick={closeMobileMenu} // Close the mobile menu when clicked
+              onClick={closeMobileMenu} 
             >
               _about-me
             </NavLink>
@@ -43,7 +43,7 @@ const Navbar = () => {
             <NavLink
               to="/projects"
               className={({ isActive }) => (isActive ? "navbar-link active" : "navbar-link")}
-              onClick={closeMobileMenu} // Close the mobile menu when clicked
+              onClick={closeMobileMenu} 
             >
               _projects
             </NavLink>
@@ -54,7 +54,7 @@ const Navbar = () => {
             <NavLink
               to="/contact-me"
               className={({ isActive }) => (isActive ? "navbar-link active" : "navbar-link")}
-              onClick={closeMobileMenu} // Close the mobile menu when clicked
+              onClick={closeMobileMenu} 
             >
               _contact-me
             </NavLink>

@@ -18,10 +18,10 @@ const Contact = () => {
 
     emailjs
       .send(
-        process.env.REACT_APP_SERVICE_ID, // Use environment variable
-        process.env.REACT_APP_TEMPLATE_ID, // Use environment variable
+        process.env.REACT_APP_SERVICE_ID,
+        process.env.REACT_APP_TEMPLATE_ID, 
         formData,
-        process.env.REACT_APP_USER_ID // Use environment variable
+        process.env.REACT_APP_USER_ID 
         
       )
       

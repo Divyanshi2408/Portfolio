@@ -24,12 +24,11 @@ const Sidebar = () => {
 
   return (
     <div className={`sidebar-container ${isExpanded ? "expanded" : ""}`}>
-      {/* Sidebar toggle */}
+      
       <div className="sidebar-toggle" onClick={toggleSidebar}>
         <FaBars />
       </div>
 
-      {/* Sidebar sections */}
       <ul className="sidebar-sections">
         <li className="sidebar-item" onClick={() => toggleSection("bio")}>
           <FaUser />

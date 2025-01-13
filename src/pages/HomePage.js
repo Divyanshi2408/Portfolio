@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
-import SnakeGame from "../components/SnakeGame"; // Import SnakeGame component
-import "./HomePage.css"; // Import styles
-import d1 from "../Assets/images/d1.png"; // Replace with your actual image path
+import SnakeGame from "../components/SnakeGame";
+import "./HomePage.css"; 
+import d1 from "../Assets/images/d1.png"; 
 
 
 const HomePage = () => {
@@ -15,7 +15,6 @@ const HomePage = () => {
   useEffect(() => {
     const carousel = carouselRef.current;
 
-    // Clone children for seamless scrolling
     if (carousel) {
       const images = Array.from(carousel.children);
       images.forEach((image) => {

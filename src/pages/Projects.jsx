@@ -5,7 +5,7 @@ import { IoLogoJavascript } from "react-icons/io";
 import { MdOutlineWebhook } from "react-icons/md";
 import './Projects.css';
 import{
-  im10,im11,im12,im13,im14,im15,im16,im17,im18,im19,im20,im21,im22,im23,im24,im25,im26,im27,im28,im29,im30,im31,im32,im33,im34,im35
+  im11,im12,im16,im20,im22,im26,im31
 } from "../Assets/images";
 const projects = [
   { id: 1, title: "Music Player Web App", category: "React", image:<img src={im12} alt="Music" />, description: "I developed a dynamic and interactive music player web application." },
@@ -69,7 +69,6 @@ const Projects = () => {
         </ul>
       </aside>
 
-      {/* Projects Display */}
       <main className="projects-container">
         {filteredProjects.length > 0 ? (
           filteredProjects.map((project) => (

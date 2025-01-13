@@ -53,21 +53,26 @@
     color: #58a6ff;
     border-bottom: 2px solid #58a6ff;
   }
-  
-  /* Hamburger Menu - Default Hidden */
+
   .hamburger {
-    display: none; /* Hide by default */
+    display: none; 
     font-size: 1.5rem;
     background: none;
     border: none;
     color: #c9d1d9;
     cursor: pointer;
   }
+  .navbar-links {
+    transition: transform 0.3s ease-in-out;
+  }
   
-  /* Show Hamburger Menu on Smaller Screens */
+  .navbar-links.mobile-menu-open {
+    transform: translateX(0);
+  }
+  
   @media (max-width: 806px) {
     .hamburger {
-      display: block; /* Show hamburger */
+      display: block; 
     }
     .navbar-links {
       display: none;
@@ -98,10 +103,3 @@
     }
   }
   
-  .navbar-links {
-    transition: transform 0.3s ease-in-out;
-  }
-  
-  .navbar-links.mobile-menu-open {
-    transform: translateX(0);
-  }

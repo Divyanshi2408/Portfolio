@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import {FaUser,FaStar,FaSchool,FaEnvelope,FaPhone,FaChevronDown,FaChevronRight,FaTimes,} from "react-icons/fa";
+import {FaChevronDown,FaChevronRight,FaTimes,} from "react-icons/fa";
 import "./AboutPage.css";
 import{
   im,im1,im2,im3,im4,im5,im6,im7,im8,im9
@@ -38,9 +38,6 @@ const sidebarData = [
   },
 ];
 
-
-
-// Extended content map with design components
 const contentMap = {
   Experience: {
     description: "This is the content for Experience. It contains details about your professional journey.",
@@ -208,7 +205,6 @@ const contentMap = {
     design: () => (
       <div className="timeline-section">
         <div className="timeline">
-          {/* First Education Block */}
          
           <div className="timeline-item left">
           <div className="date r-date">
@@ -225,8 +221,6 @@ const contentMap = {
            
             </div>
           </div>
-  
-          {/* Second Education Block */}
           
           <div className="timeline-item right">
           <div className="year">
@@ -242,8 +236,6 @@ const contentMap = {
             </div>
           </div>
   
-          {/* Third Education Block */}
-         
           <div className="timeline-item left">
           <div className="date r-date">
             <p>2017-2018</p>
@@ -261,7 +253,6 @@ const contentMap = {
       </div>
     ),
   },
-  
   
   Music: {
     description: "Share your favorite music genres or instruments you play.",
@@ -353,7 +344,6 @@ const AboutPage = () => {
 
   return (
     <div className="about-page">
-      {/* Sidebar */}
       <aside className="sidebar">
         <ul className="sidebar-section">
           {sidebarData.map((item, index) => (
@@ -408,36 +398,36 @@ const AboutPage = () => {
             </div>
           ) : (
             <div className="hero-section">
-  <div className="profile-image">
-    <img src={im9} alt="Your Name" />
-  </div>
-  <div className="intro-text">
-    <p>Hello! My name is <span className="highlight">Divyanshi pal</span></p>
-    <h1 className="role-title">Web developer</h1>
-    <p className="description">
-      Passionate web developer focused on building dynamic, user-friendly applications.
-    </p>
-  </div>
-  <div className="tech-icons">
-    <div className="icons"><img src="https://www.pagetraffic.com/blog/wp-content/uploads/2022/09/linkedin-logo-icon-3D.png" alt="Linkedin" /> 
-        <a
-  href="https://www.linkedin.com/in/divyanshi-pal/"
->Linkedin</a> </div>
-    <div className="icons"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRc1lQSuN13eDF1ryrt6oJau0y4Ape1BZ0SqAIefnJO4noz4BPJPnR5WFcE0_Lhqp_iu40&usqp=CAU" alt="GitHub" /> <a
-  href="https://github.com/Divyanshi2408"
->Github</a> </div>
-    <div className="icons"><img src="https://w7.pngwing.com/pngs/424/95/png-transparent-twitter-3d-twitter-twitter-logo-3d-twitter-logo-social-media-logo-3d-icon-thumbnail.png" alt="Twitter" />Twitter</div>
-    <div className="icons"><img src="https://i.pinimg.com/736x/94/2f/2b/942f2baae65aa6a4b55728041ec8fed5.jpg" alt="Instagram" /> <a
-  href="https://www.instagram.com/divyanshipal2808/"
->Instagram</a> </div>
-    <div className="icons"><img src="https://www.dostupnysoftware.cz/92-large_default/discord.jpg" alt="Discord" />Discord</div>
-  </div>
-</div>
+            <div className="profile-image">
+              <img src={im9} alt="Your Name" />
+            </div>
+            <div className="intro-text">
+              <p>Hello! My name is <span className="highlight">Divyanshi pal</span></p>
+              <h1 className="role-title">Web developer</h1>
+              <p className="description">
+                Passionate web developer focused on building dynamic, user-friendly applications.
+              </p>
+            </div>
+            <div className="tech-icons">
+              <div className="icons"><img src="https://www.pagetraffic.com/blog/wp-content/uploads/2022/09/linkedin-logo-icon-3D.png" alt="Linkedin" /> 
+                  <a
+            href="https://www.linkedin.com/in/divyanshi-pal/"
+          >Linkedin</a> </div>
+              <div className="icons"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRc1lQSuN13eDF1ryrt6oJau0y4Ape1BZ0SqAIefnJO4noz4BPJPnR5WFcE0_Lhqp_iu40&usqp=CAU" alt="GitHub" /> <a
+            href="https://github.com/Divyanshi2408"
+          >Github</a> </div>
+              <div className="icons"><img src="https://w7.pngwing.com/pngs/424/95/png-transparent-twitter-3d-twitter-twitter-logo-3d-twitter-logo-social-media-logo-3d-icon-thumbnail.png" alt="Twitter" />Twitter</div>
+              <div className="icons"><img src="https://i.pinimg.com/736x/94/2f/2b/942f2baae65aa6a4b55728041ec8fed5.jpg" alt="Instagram" /> <a
+            href="https://www.instagram.com/divyanshipal2808/"
+          >Instagram</a> </div>
+              <div className="icons"><img src="https://www.dostupnysoftware.cz/92-large_default/discord.jpg" alt="Discord" />Discord</div>
+            </div>
+          </div>
 
-          )}
-        </div>
-      </main>
-    </div>
+                    )}
+                  </div>
+                </main>
+              </div>
   );
 };
 
