@@ -16,15 +16,20 @@ const Contact = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
+    const emailData = {
+      to_name: 'Divyanshi Pal', 
+      from_name: formData.name,
+      from_email: formData.email,
+      message: formData.message,
+    };
+
     emailjs
       .send(
         process.env.REACT_APP_SERVICE_ID,
         process.env.REACT_APP_TEMPLATE_ID, 
-        formData,
+        emailData,
         process.env.REACT_APP_USER_ID 
-        
       )
-      
       .then(
         () => {
           setSuccess(true);
@@ -37,10 +42,6 @@ const Contact = () => {
         }
       );
   };
-  console.log('Service ID:', process.env.REACT_APP_SERVICE_ID);
-  console.log('Template ID:', process.env.REACT_APP_TEMPLATE_ID);
-  console.log('User ID:', process.env.REACT_APP_USER_ID);
-  
 
   return (
     <div className="contact-page">
@@ -48,11 +49,20 @@ const Contact = () => {
         <h3>contacts</h3>
         <span> Divyanshipal2808@gmail.com</span>
         <h3>find-me-also-in</h3>
-        
-          <li className="social-links"><FaExternalLinkAlt /><a href="https://www.linkedin.com/in/divyanshi-pal/">Linkedin account</a></li>
-          <li className="social-links"><FaExternalLinkAlt /><a href="https://github.com/Divyanshi2408">Github account</a></li>
-          <li className="social-links"><FaExternalLinkAlt /><a href="https://www.instagram.com/divyanshipal2808/">Instagram account</a></li>
-        
+        <ul>
+          <li className="social-links">
+            <FaExternalLinkAlt />
+            <a href="https://www.linkedin.com/in/divyanshi-pal/">Linkedin account</a>
+          </li>
+          <li className="social-links">
+            <FaExternalLinkAlt />
+            <a href="https://github.com/Divyanshi2408">Github account</a>
+          </li>
+          <li className="social-links">
+            <FaExternalLinkAlt />
+            <a href="https://www.instagram.com/divyanshipal2808/">Instagram account</a>
+          </li>
+        </ul>
       </div>
 
       <div className="contact-form">
@@ -89,7 +99,6 @@ const Contact = () => {
             required
           ></textarea>
           <button type="submit">submit-message</button>
-          
         </form>
 
         {success && (
