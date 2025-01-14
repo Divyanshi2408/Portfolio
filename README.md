@@ -2,6 +2,9 @@
 
 Welcome to my personal portfolio! This project showcases my skills, experiences, and projects as a web developer.
 
+![o7](https://github.com/user-attachments/assets/e7dec9bb-efeb-41d4-9fb6-3d1760962fb6)
+
+
 ## 🔗 Live Demo
 You can view the live version of my portfolio [here](https://portfolio-pi-topaz-79.vercel.app/).
 
