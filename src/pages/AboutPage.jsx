@@ -412,13 +412,19 @@ const AboutPage = () => {
               <div className="icons"><img src="https://www.pagetraffic.com/blog/wp-content/uploads/2022/09/linkedin-logo-icon-3D.png" alt="Linkedin" /> 
                   <a
             href="https://www.linkedin.com/in/divyanshi-pal/"
+            target="_blank"
+            rel="noopener noreferrer"
           >Linkedin</a> </div>
               <div className="icons"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRc1lQSuN13eDF1ryrt6oJau0y4Ape1BZ0SqAIefnJO4noz4BPJPnR5WFcE0_Lhqp_iu40&usqp=CAU" alt="GitHub" /> <a
             href="https://github.com/Divyanshi2408"
+            target="_blank"
+            rel="noopener noreferrer"
           >Github</a> </div>
               <div className="icons"><img src="https://w7.pngwing.com/pngs/424/95/png-transparent-twitter-3d-twitter-twitter-logo-3d-twitter-logo-social-media-logo-3d-icon-thumbnail.png" alt="Twitter" />Twitter</div>
               <div className="icons"><img src="https://i.pinimg.com/736x/94/2f/2b/942f2baae65aa6a4b55728041ec8fed5.jpg" alt="Instagram" /> <a
             href="https://www.instagram.com/divyanshipal2808/"
+            target="_blank"
+            rel="noopener noreferrer"
           >Instagram</a> </div>
               <div className="icons"><img src="https://www.dostupnysoftware.cz/92-large_default/discord.jpg" alt="Discord" />Discord</div>
             </div>

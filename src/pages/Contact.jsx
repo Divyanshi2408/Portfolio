@@ -52,15 +52,21 @@ const Contact = () => {
         <ul>
           <li className="social-links">
             <FaExternalLinkAlt />
-            <a href="https://www.linkedin.com/in/divyanshi-pal/">Linkedin account</a>
+            <a href="https://www.linkedin.com/in/divyanshi-pal/"
+            target="_blank"
+            rel="noopener noreferrer">Linkedin account</a>
           </li>
           <li className="social-links">
             <FaExternalLinkAlt />
-            <a href="https://github.com/Divyanshi2408">Github account</a>
+            <a href="https://github.com/Divyanshi2408"
+            target="_blank"
+            rel="noopener noreferrer">Github account</a>
           </li>
           <li className="social-links">
             <FaExternalLinkAlt />
-            <a href="https://www.instagram.com/divyanshipal2808/">Instagram account</a>
+            <a href="https://www.instagram.com/divyanshipal2808/"
+            target="_blank"
+            rel="noopener noreferrer">Instagram account</a>
           </li>
         </ul>
       </div>
