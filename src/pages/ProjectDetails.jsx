@@ -110,7 +110,9 @@ const ProjectDetails = () => {
           <p className="brief">{project.brief}</p>
           <img src={project.image} alt={project.title} className="main-image" />
           <p>{project.details}</p>
+
 {/* Technologies Used */}
+
 <div className="technologies">
             <h3>Technologies Used</h3>
             <ul>
@@ -119,7 +121,9 @@ const ProjectDetails = () => {
               ))}
             </ul>
           </div>
+
           {/* Snapshots */}
+          
           <div className="snapshots">
             <h3>Snapshots</h3>
             <div className="snapshot-images">

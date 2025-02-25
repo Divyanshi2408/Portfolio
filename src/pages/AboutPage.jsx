@@ -376,7 +376,6 @@ const AboutPage = () => {
         
       </aside>
 
-      {/* Main Content */}
       <main className="main-content">
         {activeSubItem && (
           <div className="sub-item-name-box">
