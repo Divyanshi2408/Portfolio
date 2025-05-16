@@ -8,32 +8,17 @@ import{
 const sidebarData = [
   {
     label: "Professional Info",
-    icon: (
-      <img
-        src={im}
-        alt="Professional Info Icon"
-      />
-    ),
+    icon: <img src={im} alt="Professional Info Icon" className="sidebar-icon" />,
     subItems: ["Experience", "Skills", "Certificates"],
   },
   {
     label: "Personal Info",
-    icon: (
-      <img
-        src={im1}
-        alt="Professional Info Icon"
-      />
-    ),
+    icon: <img src={im1} alt="Professional Info Icon" className="sidebar-icon" />,
     subItems: ["Bio", "Education"],
   },
   {
     label: "Extracurricular Activities",
-    icon: (
-      <img
-        src={im2}
-        alt="Professional Info Icon"
-      />
-    ),
+    icon: <img src={im2} alt="Professional Info Icon" className="sidebar-icon" />,
     subItems: ["OpenSource"],
   },
 ];
@@ -43,144 +28,89 @@ const contentMap = {
     description: "This is the content for Experience. It contains details about your professional journey.",
     design: () => (
       <div className="experience-section">
-
-<p><strong>Software Engineer Intern</strong><br />
-  <strong>Aerial Delivery Research and Development Establishment (ADRDE)</strong><br />
-  <em>June 2023 - August 2023</em></p>
-
-        <p>As a Software Engineer Intern at ADRDE, I engineered 
-        and optimized Android-based applications to improve the 
-        operational efficiency of field teams. I utilized Android 
-        development tools such as Android Studio and Java to develop
-        and maintain high-performance mobile applications. My role 
-        also involved conducting unit testing, debugging, and performance 
-        optimization to ensure the app's stability and user satisfaction.
-          Additionally, I contributed to system design documentation, ensuring 
-          a clear understanding of the app's architecture and functionality, 
-          which provided a foundation for future improvements.</p>
-
+        <p><strong>Software Engineer Intern</strong><br />
+          <strong>Aerial Delivery Research and Development Establishment (ADRDE)</strong><br />
+          <em>June 2023 - August 2023</em></p>
+        <p>
+          As a Software Engineer Intern at ADRDE, I engineered and optimized Android-based applications to improve the operational efficiency of field teams. I utilized Android development tools such as Android Studio and Java to develop and maintain high-performance mobile applications. My role also involved conducting unit testing, debugging, and performance optimization to ensure the app's stability and user satisfaction. Additionally, I contributed to system design documentation, ensuring a clear understanding of the app's architecture and functionality, which provided a foundation for future improvements.
+        </p>
       </div>
     ),
   },
   Skills: {
-  description: "This section highlights your technical and soft skills.",
-  design: () => (
-    <div className="skills-section">
-     
-      <div className="skills-categories">
-        <div className="skills-category">
-          <h4>Technical</h4>
-          <div className="skills-icons">
-          <div className="skill-items">
-            <div className="skill-item">
-              <img src="https://img.icons8.com/color/144/000000/javascript--v1.png" alt="JavaScript" />
-              <span>JavaScript</span>
-            </div>
-            </div>
-            <div className="skill-items">
-            <div className="skill-item">
-              <img src="https://img.icons8.com/color/144/000000/react-native.png" alt="React" />
-              <span>React</span>
-            </div>
-            </div>
-            <div className="skill-items">
-            <div className="skill-item">
-              <img src="https://img.icons8.com/fluency/144/000000/node-js.png" alt="SASS" />
-              <span>Node.js</span>
-            </div>
-            </div>
-            <div className="skill-items">
-            <div className="skill-item">
-              <img src="https://img.icons8.com/color/48/000000/mongodb.png" alt="jQuery" />
-              <span>MongoDB</span>
-            </div>
-            </div>
-            <div className="skill-items">
-            <div className="skill-item">
-              <img src="https://img.icons8.com/color/144/000000/bootstrap.png" alt="Python" />
-              <span>Bootstrap</span>
-            </div>
-            </div>
-            <div className="skill-items">
-            <div className="skill-item">
-              <img src="https://bourhaouta.gallerycdn.vsassets.io/extensions/bourhaouta/tailwindshades/0.0.5/1592520164095/Microsoft.VisualStudio.Services.Icons.Default" alt="Bootstrap" />
-              <span>Tailwind</span>
-            </div>
+    description: "This section highlights your technical and soft skills.",
+    design: () => (
+      <div className="skills-section">
+        <div className="skills-categories">
+          <div className="skills-category">
+            <h4>Technical</h4>
+            <div className="skills-icons">
+              {[{
+                src: "https://img.icons8.com/color/144/000000/javascript--v1.png",
+                name: "JavaScript"
+              }, {
+                src: "https://img.icons8.com/color/144/000000/react-native.png",
+                name: "React"
+              }, {
+                src: "https://img.icons8.com/fluency/144/000000/node-js.png",
+                name: "Node.js"
+              }, {
+                src: "https://img.icons8.com/color/48/000000/mongodb.png",
+                name: "MongoDB"
+              }, {
+                src: "https://img.icons8.com/color/144/000000/bootstrap.png",
+                name: "Bootstrap"
+              }, {
+                src: "https://bourhaouta.gallerycdn.vsassets.io/extensions/bourhaouta/tailwindshades/0.0.5/1592520164095/Microsoft.VisualStudio.Services.Icons.Default",
+                name: "Tailwind"
+              }].map(skill => (
+                <div className="skill-items" key={skill.name}>
+                  <div className="skill-item">
+                    <img src={skill.src} alt={skill.name} className="skill-icon" />
+                    <span>{skill.name}</span>
+                  </div>
+                </div>
+              ))}
             </div>
           </div>
-        </div>
-
-        <div className="skills-category">
-          <h4>Tools And Software</h4>
-          <div className="skills-icons">
-          <div className="skill-items">
-            <div className="skill-item">
-              <img src="https://img.icons8.com/color/144/000000/git.png" alt="Node.js" />
-              <span>Git</span>
+          <div className="skills-category">
+            <h4>Tools And Software</h4>
+            <div className="skills-icons">
+              {[{
+                src: "https://img.icons8.com/color/144/000000/git.png",
+                name: "Git"
+              }, {
+                src: "https://img.icons8.com/fluency/144/000000/github.png",
+                name: "Github"
+              }, {
+                src: "https://img.icons8.com/fluency/144/000000/visual-studio-code-2019.png",
+                name: "VSCode"
+              }].map(tool => (
+                <div className="skill-items" key={tool.name}>
+                  <div className="skill-item">
+                    <img src={tool.src} alt={tool.name} className="skill-icon" />
+                    <span>{tool.name}</span>
+                  </div>
+                </div>
+              ))}
             </div>
-            </div>
-            <div className="skill-items">
-            <div className="skill-item">
-              <img src="https://img.icons8.com/fluency/144/000000/github.png" alt="Next.js" />
-              <span>Github</span>
-            </div>
-            </div>
-            <div className="skill-items">
-            <div className="skill-item">
-              <img src="https://img.icons8.com/fluency/144/000000/visual-studio-code-2019.png" alt="Tailwind" />
-              <span>VSCode</span>
-            </div>
-            </div>
-           
           </div>
         </div>
       </div>
-    </div>
-  ),
-},
-
+    ),
+  },
   Certificates: {
     description: "Details about certifications i have earned.",
     design: () => (
       <div className="commonn-section">
         <p>I have earned certifications in various technologies to enhance my skills and stay updated with industry trends.</p>
         <div className="commonn-grid">
-          <div className="commonn-card">
-            <img
-              src={im4}
-              alt="Open Source Project 1"
-            />
-            <p>NPTEL</p>
-          </div>
-          <div className="commonn-card">
-            <img
-              src={im5}
-              alt="Open Source Project 2"
-            />
-            <p>MICROSOFT AZURE</p>
-          </div>
-          <div className="commonn-card">
-            <img
-              src={im6}
-              alt="Open Source Project 3"
-            />
-            <p>ORACLE</p>
-          </div>
-          <div className="commonn-card">
-            <img
-              src={im7}
-              alt="Open Source Project 4"
-            />
-            <p>CONGNIZANT</p>
-          </div>
-          <div className="commonn-card">
-            <img
-              src={im8}
-              alt="Open Source Project 5"
-            />
-            <p>COURSERA</p>
-          </div>
-         
+          {[{ src: im4, label: "NPTEL" }, { src: im5, label: "MICROSOFT AZURE" }, { src: im6, label: "ORACLE" }, { src: im7, label: "CONGNIZANT" }, { src: im8, label: "COURSERA" }].map((cert, idx) => (
+            <div className="commonn-card" key={idx}>
+              <img src={cert.src} alt={cert.label} className="certificate-icon" />
+              <p>{cert.label}</p>
+            </div>
+          ))}
         </div>
       </div>
     ),
@@ -190,138 +120,78 @@ const contentMap = {
     design: () => (
       <div className="bio-section">
         <p>Hi, I am Divyanshi Pal 👋</p>
-
-<p>I am a Computer Science Engineering graduate 👩‍🎓 with a passion for building innovative and impactful software solutions. Currently, I am preparing to become a full-stack developer, focusing on mastering both frontend and backend technologies to create end-to-end web applications.</p>
-
-<p>With a strong foundation in computer science and programming, I have honed my skills in frontend development using HTML, CSS, JavaScript, and React. I enjoy designing intuitive and user-friendly interfaces that provide seamless experiences. My current journey includes delving deeper into React, exploring hooks, state management, and routing to build dynamic and responsive web applications.</p>
-
-<p>As I progress in my full-stack development journey, I am excited to expand my knowledge of backend technologies and integrate them with my frontend expertise. I am driven by a passion for learning and a commitment to developing solutions that make a difference in people's lives.</p>
-
+        <p>I am a Computer Science Engineering graduate 👩‍🎓 with a passion for building innovative and impactful software solutions. Currently, I am preparing to become a full-stack developer, focusing on mastering both frontend and backend technologies to create end-to-end web applications.</p>
+        <p>With a strong foundation in computer science and programming, I have honed my skills in frontend development using HTML, CSS, JavaScript, and React. I enjoy designing intuitive and user-friendly interfaces that provide seamless experiences. My current journey includes delving deeper into React, exploring hooks, state management, and routing to build dynamic and responsive web applications.</p>
+        <p>As I progress in my full-stack development journey, I am excited to expand my knowledge of backend technologies and integrate them with my frontend expertise. I am driven by a passion for learning and a commitment to developing solutions that make a difference in people's lives.</p>
       </div>
     ),
   },
-  Education :{
+  Education: {
     description: "Your education timeline details.",
     design: () => (
       <div className="timeline-section">
         <div className="timeline">
-         
-          <div className="timeline-item left">
-          <div className="date r-date">
-          
-            <p>2020-2024</p>
-           
-          </div>
-            <div className="timeline-icon">
-              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSvhIRmO4HJufxuC2kmA2VtoTy1zMM4XF75A&s" alt="Graduation Icon" />
+          {[{
+            date: "2020-2024",
+            icon: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSvhIRmO4HJufxuC2kmA2VtoTy1zMM4XF75A&s",
+            title: "Bachelor of Technology (CSE) [8.5 CGP]",
+            subtitle: "Dr. A.P.J. Abdul Kalam Technical University",
+            side: "left"
+          }, {
+            date: "2019-2020",
+            icon: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBAoQgncMuqSmAvojEND0m0jy0Hp8qNo0q7PZrqFnK_1w5mnWE-IdtT1UMZY0AFcOh-qY&usqp=CAU",
+            title: "Higher Secondary Education [76%]",
+            subtitle: "Queen Victoria Girls Inter College",
+            side: "right"
+          }, {
+            date: "2017-2018",
+            icon: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBAoQgncMuqSmAvojEND0m0jy0Hp8qNo0q7PZrqFnK_1w5mnWE-IdtT1UMZY0AFcOh-qY&usqp=CAU",
+            title: "Secondary Education [89%]",
+            subtitle: "Queen Victoria Girls Inter College",
+            side: "left"
+          }].map((edu, idx) => (
+            <div className={`timeline-item ${edu.side}`} key={idx}>
+              <div className={edu.side === "right" ? "year" : "date r-date"}><p>{edu.date}</p></div>
+              <div className="timeline-icon">
+                <img src={edu.icon} alt={`${edu.title} Icon`} className="timeline-icon-img" />
+              </div>
+              <div className="timeline-content">
+                <h3>{edu.title}</h3>
+                <p>{edu.subtitle}</p>
+              </div>
             </div>
-            <div className="timeline-content">
-              <h3>Bachelor of Technology (CSE) [8.5 CGP]</h3>
-              <p>Dr. A.P.J. Abdul Kalam Technical University</p>
-           
-            </div>
-          </div>
-          
-          <div className="timeline-item right">
-          <div className="year">
-            <p>2019-2020</p>
-          </div>
-            <div className="timeline-icon">
-              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBAoQgncMuqSmAvojEND0m0jy0Hp8qNo0q7PZrqFnK_1w5mnWE-IdtT1UMZY0AFcOh-qY&usqp=CAU" alt="College Icon" />
-            </div>
-            <div className="timeline-content">
-              <h3>Higher Secondary Education [76%]</h3>
-              <p>Queen Victoria Girls Inter College </p>
-              
-            </div>
-          </div>
-  
-          <div className="timeline-item left">
-          <div className="date r-date">
-            <p>2017-2018</p>
-          </div>
-            <div className="timeline-icon">
-              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBAoQgncMuqSmAvojEND0m0jy0Hp8qNo0q7PZrqFnK_1w5mnWE-IdtT1UMZY0AFcOh-qY&usqp=CAU" alt="School Icon" />
-            </div>
-            <div className="timeline-content">
-              <h3>Secondary Education<br/>[89%]</h3>
-              <p>Queen Victoria Girls Inter College</p>
-            
-            </div>
-          </div>
+          ))}
         </div>
       </div>
     ),
   },
-  
-  Music: {
-    description: "Share your favorite music genres or instruments you play.",
-    design: () => (
-      <div className="music-section">
-        <h3>Your Favorite Music</h3>
-        <p>Genres: Rock, Jazz, Classical</p>
-        <p>Instruments: Guitar, Piano</p>
-      </div>
-    ),
-  },
-  OpenSource :{
+  OpenSource: {
     description: "Highlight your contributions to open-source projects.",
     design: () => (
       <div className="co-section">
-        <p>I am passionate about contributing to open-source, 
-        collaborating with global developers to enhance software 
-        and solve real-world problems. Through programs like GSSoC, 
-        Social Summer of Code, and Hacktoberfest, I’ve refined my 
-        technical skills and contributed to impactful projects.</p>
+        <p>I am passionate about contributing to open-source, collaborating with global developers to enhance software and solve real-world problems. Through programs like GSSoC, Social Summer of Code, and Hacktoberfest, I’ve refined my technical skills and contributed to impactful projects.</p>
         <div className="co-grid">
-          <div className="co-card">
-            <img
-              src="https://github.blog/wp-content/uploads/2022/10/hacktoberfestbanner.jpeg?fit=1200%2C630"
-              alt="Open Source Project 1"
-            />
-            <p>Actively participated in Hacktoberfest,
-             where I made multiple contributions to various open-source projects.
-              I worked on tasks such as resolving issues, improving documentation,
-               and helping with feature enhancements. This initiative not only 
-               improved my coding skills but also deepened my understanding of 
-               collaboration in the open-source community.</p>
-          </div>
-         
-          <div className="co-card">
-            <img
-              src="https://assets.devfolio.co/hackathons/c1573e1780a9481e97869fcd6fbb07fa/assets/cover/136.png"
-              alt="Open Source Project 3"
-            />
-            <p>Contributed to Social Summer of Code, 
-            which allowed me to work on projects designed 
-            to make a positive impact on society. I helped in
-             enhancing functionality and improving the user experience 
-             of open-source social projects by contributing code fixes 
-             and testing new features. My involvement in the program gave 
-             me exposure to best practices in open-source development and teamwork.</p>
-          </div>
-          <div className="co-card">
-            <img
-              src="https://cdn.hashnode.com/res/hashnode/image/upload/v1623661215136/jPWcZyekD.png?w=1600&h=840&fit=crop&crop=entropy&auto=compress,format&format=webp"
-              alt="Open Source Project 2"
-            />
-            <p>Participated in GirlScript Summer of Code, 
-            a program aimed at encouraging women to engage in
-             open-source development. During the program, I contributed
-              to multiple open-source projects by identifying bugs,
-               improving documentation, and collaborating with a global 
-               team of developers. This experience helped me improve my
-                problem-solving skills and gain hands-on experience with 
-                version control systems like Git.</p>
-          </div>
-         
+          {[{
+            src: "https://github.blog/wp-content/uploads/2022/10/hacktoberfestbanner.jpeg?fit=1200%2C630",
+            text: "Actively participated in Hacktoberfest, where I made multiple contributions to various open-source projects. I worked on tasks such as resolving issues, improving documentation, and helping with feature enhancements. This initiative not only improved my coding skills but also deepened my understanding of collaboration in the open-source community."
+          }, {
+            src: "https://assets.devfolio.co/hackathons/c1573e1780a9481e97869fcd6fbb07fa/assets/cover/136.png",
+            text: "Contributed to Social Summer of Code, which allowed me to work on projects designed to make a positive impact on society. I helped inenhancing functionality and improving the user experience of open-source social projects by contributing code fixes and testing new features. My involvement in the program gave me exposure to best practices in open-source development and teamwork."
+          }, {
+            src: "https://cdn.hashnode.com/res/hashnode/image/upload/v1623661215136/jPWcZyekD.png?w=1600&h=840&fit=crop&crop=entropy&auto=compress,format&format=webp",
+            text: "Participated in GirlScript Summer of Code, a program aimed at encouraging women to engage in open-source development. During the program, I contributed to multiple open-source projects by identifying bugs, improving documentation, and collaborating with a global team of developers. This experience helped me improve my problem-solving skills and gain hands-on experience with version control systems like Git."
+          }].map((item, idx) => (
+            <div className="co-card" key={idx}>
+              <img src={item.src} alt={`Open Source Project ${idx + 1}`} className="open-source-icon" />
+              <p>{item.text}</p>
+            </div>
+          ))}
         </div>
       </div>
     ),
   },
-
- 
 };
+
 
 const AboutPage = () => {
   const [openSections, setOpenSections] = useState({});
