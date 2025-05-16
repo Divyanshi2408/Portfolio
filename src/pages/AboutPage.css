@@ -139,7 +139,7 @@
 .skills-icons {
   display: flex;
   flex-wrap: wrap;
-  column-gap: 200px;
+  column-gap: 170px;
   row-gap: 30px;
 }
 
@@ -480,6 +480,9 @@
   .year {
      left: calc( 250px); 
    }
+     .skills-icons {
+     column-gap: 180px;
+}
 }
 @media (max-width: 1064px){
   .skill-items, .skill-item img {
@@ -506,7 +509,7 @@
   font-size: 20px;
 }
 .skills-icons{
-  column-gap: 180px;
+  column-gap: 205px;
 }
 
   .common-grid, .common-grids {
