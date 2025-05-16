@@ -120,7 +120,6 @@
   color: #c0392b;
 }
 
-
 .skills-section {
   margin-bottom:40px;
   color: #fff;
@@ -170,6 +169,7 @@
   font-size: 24px;
   
 }
+
 
 .hero-section {
   text-align: center;
@@ -646,6 +646,7 @@
   }
  
 }
+
 @media (max-width: 768px) {
 
   .sidebar {
@@ -731,8 +732,6 @@
   border-right: 15px solid #250f4e;
 }
 
-
-
 .timeline-item.left .timeline-content {
   text-align: left;
   margin-right: 10px;
@@ -795,8 +794,8 @@
   }
  
   .co-card img {
-    width: 150%; 
-    max-width: 150%; 
+    width: 100%; 
+    max-width: 100%; 
     height: auto; 
   }
   .date {
@@ -847,7 +846,6 @@
       column-gap: 250px;
       row-gap: 30px;
     }
-   
 
 }
 @media (max-width: 500px){
@@ -913,13 +911,13 @@
   }
   .date {
     left: calc( -70px); 
-    top:170px ;
+    top:110px ;
    }
    
    .year {
      position: relative;
       left: calc( -70px); 
-      top:170px;
+      top:110px;
       
     }
     .timeline-section {
@@ -947,4 +945,5 @@
       
     }
 }
+
 
