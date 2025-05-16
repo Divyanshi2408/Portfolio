@@ -933,15 +933,15 @@
     
   }
   .date {
-    left: calc( -60px); 
-    top:170px ;
+    left: calc( -50px); 
+    top:105px ;
    }
    
    .year {
     
      position: relative;
-      left: calc( -60px); 
-      top:150px;
+      left: calc( -50px); 
+      top:110px;
       
     }
 }
