@@ -119,10 +119,10 @@ const contentMap = {
     description: "Your biography goes here, describing who you are.",
     design: () => (
       <div className="bio-section">
-        <p>Hi, I am Divyanshi Pal 👋</p>
-        <p>I am a Computer Science Engineering graduate 👩‍🎓 with a passion for building innovative and impactful software solutions. Currently, I am preparing to become a full-stack developer, focusing on mastering both frontend and backend technologies to create end-to-end web applications.</p>
-        <p>With a strong foundation in computer science and programming, I have honed my skills in frontend development using HTML, CSS, JavaScript, and React. I enjoy designing intuitive and user-friendly interfaces that provide seamless experiences. My current journey includes delving deeper into React, exploring hooks, state management, and routing to build dynamic and responsive web applications.</p>
-        <p>As I progress in my full-stack development journey, I am excited to expand my knowledge of backend technologies and integrate them with my frontend expertise. I am driven by a passion for learning and a commitment to developing solutions that make a difference in people's lives.</p>
+       <p>
+  I'm <strong>Divyanshi Pal</strong>, a dedicated and detail-oriented <strong>Application Developer</strong> with expertise in the <strong>MERN stack</strong> — MongoDB, Express.js, React.js, and Node.js. I specialize in crafting scalable, responsive, and user-centric web applications with clean architecture and intuitive design. With a strong foundation in both frontend and backend development, I actively contribute to the full development lifecycle — from building robust RESTful APIs to designing seamless user interfaces. I take pride in writing clean, maintainable code and continuously refining my skill set to stay aligned with modern development practices. I bring a proactive mindset, strong problem-solving abilities, and a genuine passion for technology. My focus is always on building impactful digital solutions while growing as a developer through collaboration, creativity, and continuous learning.
+</p>
+
       </div>
     ),
   },
