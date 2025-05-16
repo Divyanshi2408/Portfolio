@@ -468,6 +468,7 @@
   .common-grid, .common-grids {
     grid-template-columns: repeat(2, 1fr); 
   }
+ 
 }
 @media (max-width: 1186px){
   .timeline-content {
@@ -745,13 +746,13 @@
 .date {
  position: relative;
  left: calc( -120px);
- top:150px ;
+ top:140px ;
   
 }
 .year {
   position: relative;
    left: calc( -120px); 
-   top:130px;
+   top:150px;
    
  }
 
@@ -807,7 +808,7 @@
    .year {
      position: relative;
       left: calc( -120px); 
-      top:130px;
+      top:150px;
       
     }
     .timeline-content {
@@ -823,15 +824,15 @@
   }
   .date {
     
-    left: calc( -100px); 
-    top:170px ;
+    left: calc( -90px); 
+    top:180px ;
      
    }
    
    .year {
      position: relative;
-      left: calc( -100px); 
-      top:150px;
+      left: calc( -90px); 
+      top:180px;
       
     }
     .skill-items, .skill-item img {
@@ -857,7 +858,7 @@
   .date {
     
     left: calc( -90px); 
-    top:170px ;
+    top:160px ;
      
    }
    
@@ -927,21 +928,21 @@
 }
 @media (max-width: 400px){
   .timeline-content {
-    width:70%;
+    width:60%;
     margin-left: 55px;
     margin-right: -50px;
     
   }
   .date {
-    left: calc( -50px); 
-    top:105px ;
+    left: calc( -40px); 
+    top:115px ;
    }
    
    .year {
     
      position: relative;
-      left: calc( -50px); 
-      top:110px;
+      left: calc( -40px); 
+      top:115px;
       
     }
 }

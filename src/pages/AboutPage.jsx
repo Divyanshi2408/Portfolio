@@ -134,20 +134,20 @@ const contentMap = {
           {[{
             date: "2020-2024",
             icon: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSvhIRmO4HJufxuC2kmA2VtoTy1zMM4XF75A&s",
-            title: "Bachelor of Technology (CSE) [8.5 CGP]",
+            title: "Bachelor of Technology [8.5 CGP] (CSE)",
             subtitle: "Dr. A.P.J. Abdul Kalam Technical University",
             side: "left"
           }, {
             date: "2019-2020",
             icon: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBAoQgncMuqSmAvojEND0m0jy0Hp8qNo0q7PZrqFnK_1w5mnWE-IdtT1UMZY0AFcOh-qY&usqp=CAU",
-            title: "Higher Secondary Education [76%]",
-            subtitle: "Queen Victoria Girls Inter College",
+            title: "Higher Secondary Education [76%] (PCM)",
+            subtitle: "Queen Victoria Girls Inter College, Agra",
             side: "right"
           }, {
             date: "2017-2018",
             icon: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBAoQgncMuqSmAvojEND0m0jy0Hp8qNo0q7PZrqFnK_1w5mnWE-IdtT1UMZY0AFcOh-qY&usqp=CAU",
-            title: "Secondary Education [89%]",
-            subtitle: "Queen Victoria Girls Inter College",
+            title: "Secondary Education [89%] (Science)",
+            subtitle: "Queen Victoria Girls Inter College, Agra  ",
             side: "left"
           }].map((edu, idx) => (
             <div className={`timeline-item ${edu.side}`} key={idx}>
