@@ -334,9 +334,12 @@ const AboutPage = () => {
             </div>
             <div className="intro-text">
               <p>Hello! My name is <span className="highlight">Divyanshi pal</span></p>
-              <h1 className="role-title">Web developer</h1>
+              <h1 className="role-title">MERN Stack developer</h1>
               <p className="description">
-                Passionate web developer focused on building dynamic, user-friendly applications.
+                <p>
+                I build clean, scalable web applications using the MERN stack, focusing on intuitive UI and real-world functionality.
+              </p>
+
               </p>
             </div>
             <div className="tech-icons">
