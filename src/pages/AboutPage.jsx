@@ -24,19 +24,72 @@ const sidebarData = [
 ];
 
 const contentMap = {
-  Experience: {
-    description: "This is the content for Experience. It contains details about your professional journey.",
-    design: () => (
-      <div className="experience-section">
-        <p><strong>Software Engineer Intern</strong><br />
-          <strong>Aerial Delivery Research and Development Establishment (ADRDE)</strong><br />
-          <em>June 2023 - August 2023</em></p>
-        <p>
-          As a Software Engineer Intern at ADRDE, I engineered and optimized Android-based applications to improve the operational efficiency of field teams. I utilized Android development tools such as Android Studio and Java to develop and maintain high-performance mobile applications. My role also involved conducting unit testing, debugging, and performance optimization to ensure the app's stability and user satisfaction. Additionally, I contributed to system design documentation, ensuring a clear understanding of the app's architecture and functionality, which provided a foundation for future improvements.
-        </p>
-      </div>
-    ),
-  },
+ Experience: {
+  description: "This is the content for Experience. It contains details about your professional journey.",
+ design: () => (
+  <div className="experience-section">
+    
+    <div className="experience-card">
+      <p><strong>Application Developer</strong><br />
+      <strong>Ninepages Techsolutions Private Limited</strong><br />
+      <em>September 2024 - Present</em></p>
+      <div>
+  <p>
+    As an <strong>Application Developer</strong>, I focus on building and maintaining scalable web applications using the <strong>MERN stack</strong>. My responsibilities include:
+  </p>
+  <ul className="list-disc list-inside mt-2 space-y-1">
+    <li>
+      <strong>Structuring Web Applications:</strong> Developing modular and maintainable codebases to enhance scalability and readability.
+    </li>
+    <li>
+      <strong>Creating Reusable Components:</strong> Designing and implementing reusable UI components with React.js, ES6+, and Tailwind CSS to ensure consistency and efficiency across applications.
+    </li>
+    <li>
+      <strong>Integrating RESTful APIs:</strong> Connecting frontend components to backend services by integrating RESTful APIs, facilitating seamless data flow and user interactions.
+    </li>
+    <li>
+      <strong>Performing CRUD Operations:</strong> Implementing Create, Read, Update, and Delete functionalities to manage application data effectively.
+    </li>
+    <li>
+      <strong>Collaborating with Cross-Functional Teams:</strong> Working closely with designers and backend developers to deliver cohesive and user-friendly applications.
+    </li>
+  </ul>
+</div>
+
+    </div>
+
+    <div className="experience-card">
+      <p><strong>Summer Trainee</strong><br />
+      <strong>Aerial Delivery Research and Development Establishment (ADRDE)</strong><br />
+      <em>June 2023 - August 2023</em></p>
+     <div>
+  <p>
+    During my summer internship at the <strong>Aerial Delivery Research and Development Establishment (ADRDE)</strong>, a premier DRDO laboratory specializing in aerial delivery systems, I undertook a project focused on developing a secure internal chat application to facilitate communication among research teams.
+  </p>
+  <p className="mt-2 font-semibold">Key Contributions:</p>
+  <ul className="list-disc list-inside mt-2 space-y-1">
+    <li>
+      <strong>Developed a Secure Chat Application:</strong> Designed and implemented a real-time chat application using React.js for the frontend and Node.js with Express.js for the backend, ensuring seamless communication within the organization.
+    </li>
+    <li>
+      <strong>Integrated RESTful APIs:</strong> Established robust RESTful APIs to handle message transmission, user authentication, and data retrieval, enhancing the application's functionality and user experience.
+    </li>
+    <li>
+      <strong>Implemented JWT Authentication:</strong> Ensured secure user authentication and session management by integrating JSON Web Tokens (JWT), safeguarding sensitive communication data.
+    </li>
+    <li>
+      <strong>Database Management with MongoDB:</strong> Utilized MongoDB for efficient storage and retrieval of chat histories and user information, optimizing data handling processes.
+    </li>
+  </ul>
+</div>
+
+    </div>
+
+  </div>
+)
+
+},
+
   Skills: {
     description: "This section highlights your technical and soft skills.",
     design: () => (
@@ -119,9 +172,18 @@ const contentMap = {
     description: "Your biography goes here, describing who you are.",
     design: () => (
       <div className="bio-section">
-       <p>
-  I'm <strong>Divyanshi Pal</strong>, a dedicated and detail-oriented <strong>Application Developer</strong> with expertise in the <strong>MERN stack</strong> — MongoDB, Express.js, React.js, and Node.js. I specialize in crafting scalable, responsive, and user-centric web applications with clean architecture and intuitive design. With a strong foundation in both frontend and backend development, I actively contribute to the full development lifecycle — from building robust RESTful APIs to designing seamless user interfaces. I take pride in writing clean, maintainable code and continuously refining my skill set to stay aligned with modern development practices. I bring a proactive mindset, strong problem-solving abilities, and a genuine passion for technology. My focus is always on building impactful digital solutions while growing as a developer through collaboration, creativity, and continuous learning.
+      <p>
+   I'm <strong>Divyanshi Pal</strong>, a passionate and performance-driven <strong>Application Developer</strong> with a strong foundation in the <strong>MERN stack</strong> — MongoDB, Express.js, React.js, and Node.js. I specialize in building scalable, responsive, and user-centric web applications that solve real-world problems through clean code and thoughtful design.
+  <br /><br />
+  Currently, I’m working as an Application Developer where I design and develop modern, full-stack applications with a focus on both frontend excellence and backend robustness. My strength lies in blending strong UI development skills in <strong>React.js</strong> with backend logic in <strong>Node.js</strong> and <strong>Express</strong>, ensuring seamless user experiences and efficient data handling.
+  <br /><br />
+  🛠️ <strong>Tech Stack:</strong> JavaScript (ES6+), React.js, Redux Toolkit, Node.js, Express.js, MongoDB, REST APIs, Git, GitHub, Firebase, GraphQL (basic), Tailwind CSS, Figma.
+  <br /><br />
+  I’m deeply committed to continuous learning and staying aligned with modern web development best practices. I take pride in writing clean, maintainable, and scalable code, and I enjoy turning ideas into intuitive digital solutions. Whether collaborating with teams or working independently, I bring a proactive mindset, strong problem-solving ability, and a user-first approach to development.
+  <br /><br />
+  🤝 I’m always open to collaborating on innovative ideas, learning from others, and contributing to meaningful tech conversations. Let’s connect!
 </p>
+
 
       </div>
     ),

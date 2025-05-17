@@ -120,6 +120,54 @@
   color: #c0392b;
 }
 
+.experience-section {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 1rem;
+}
+
+.experience-card {
+  background-color: #2a2a3f; /* Deep navy/indigo */
+  color: #e5e7eb; /* Soft light gray for text */
+  border-left: 4px solid #4b5563; 
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: background-color 0.3s ease;
+}
+
+.experience-card:hover {
+  background-color: #363654;
+}
+
+.experience-card p {
+  margin-bottom: 0.5rem;
+  line-height: 1.6;
+  color: #d1d5db; /* Lighter gray for paragraphs */
+}
+
+.experience-card ul {
+  margin-top: 0.5rem;
+  padding-left: 1.2rem;
+}
+
+.experience-card li {
+  margin-bottom: 0.4rem;
+  color: #cbd5e1; /* Slightly bluish gray for list items */
+}
+
+.experience-card strong {
+  color: #58a6ff; /* Warm yellow for emphasis */
+  font-weight: 600;
+}
+
+.experience-card em {
+  color: #9ca3af; /* Muted gray for date/info */
+  font-style: italic;
+}
+
+
 .skills-section {
   margin-bottom:40px;
   color: #fff;
