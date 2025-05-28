@@ -102,4 +102,10 @@
       border: none;
     }
   }
-  
+   @media (max-width: 650px){
+   .navbar-brand {
+    padding: 12px 20px;
+
+  }
+   }
+ 
