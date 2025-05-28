@@ -12,70 +12,70 @@ const projects = [
     id: 1,
     title: "Learning Management System (LMS)",
     category: "Node.js",
-    image: <img src={im40} alt="LMS" />,
+    image: im40,
     description: "A MERN stack-based LMS platform where users can enroll in courses, track progress, and access learning materials.",
   },
   {
     id: 2,
     title: "ThreadSpire – Community Wisdom Threads",
     category: "Node.js",
-    image: <img src={im36} alt="ThreadSpire" />,
+    image: im36,
     description: "A MERN-based community platform where users create, remix, and organize long-form wisdom threads.",
   },
   {
     id: 3,
     title: "Real Estate Web App",
     category: "Node.js",
-    image: <img src={im44} alt="Real Estate" />,
+    image: im44,
     description: "A full-stack MERN Real Estate application for property listings, user authentication, and real-time search.",
   },
   {
     id: 4,
     title: "Music Player Web App",
     category: "React",
-    image: <img src={im12} alt="Music" />,
+    image: im12,
     description: "I developed a dynamic and interactive music player web application.",
   },
   {
     id: 5,
     title: "Recipe Finder Web App",
     category: "React",
-    image: <img src={im16} alt="recipe" />,
+    image: im16,
     description: "I created a Recipe Finder web application using React",
   },
   {
     id: 6,
     title: "Airline Website",
     category: "HTML",
-    image: <img src={im26} alt="airline" />,
+    image: im26,
     description: "I created a dynamic and user-friendly Airline Website as a frontend-only project",
   },
   {
     id: 7,
     title: "Travel Website",
     category: "HTML",
-    image: <img src={im22} alt="travel" />,
+    image: im22,
     description: "I created a Travel Website using HTML, CSS, and JavaScript, aimed at showcasing travel destinations and services.",
   },
   {
     id: 8,
     title: "Flower Website",
     category: "HTML",
-    image: <img src={im31} alt="flower" />,
+    image: im31,
     description: "This Flower Website was developed using HTML, CSS, and JavaScript",
   },
   {
     id: 9,
     title: "Sorting Algorithm Visualizer",
     category: "React",
-    image: <img src={im20} alt="sorting" />,
+    image: im20,
     description: "The Sorting Algorithm Visualizer is a React-based application that visually demonstrates various sorting algorithms in action.",
   },
   {
     id: 10,
     title: "To-Do List App",
     category: "React",
-    image: <img src={im11} alt="todo" />,
+    image: im11,
     description: "I developed a To-Do List App using React, designed to help users efficiently manage their daily tasks.",
   },
 ];
@@ -137,7 +137,7 @@ const Projects = () => {
         {filteredProjects.length > 0 ? (
           filteredProjects.map((project) => (
             <div className="project-card" key={project.id}>
-            {project.image}
+            <img src={project.image} alt={project.title} loading="lazy" />
               <div className="project-details">
                 <h4>{project.title}</h4>
                 <p>{project.description}</p>
