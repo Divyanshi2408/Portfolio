@@ -34,9 +34,21 @@ import im32 from "./f2.png"
 import im33 from "./f3.png"
 import im34 from "./f4.png"
 import im35 from "./f5.png"
+import im36 from "./divya1.jpg"
+import im38 from "./divya3.jpg"
+import im39 from "./divya4.jpg"
+import im40 from "./lms1.png"
+import im41 from "./lms2.png"
+import im42 from "./lms3.png"
+import im43 from "./lms4.png"
+import im44 from "./r1.png"
+import im45 from "./r2.png"
+import im46 from "./r3.png"
 
 
 
 export{
-    im,im1,im2,im3,im4,im5,im6,im7,im8,im9,im10,im11,im12,im13,im14,im15,im16,im17,im18,im19,im20,im21,im22,im23,im24,im25,im26,im27,im28,im29,im30,im31,im32,im33,im34,im35
+    im,im1,im2,im3,im4,im5,im6,im7,im8,im9,im10,im11,im12,im13,im14,
+    im15,im16,im17,im18,im19,im20,im21,im22,im23,im24,im25,im26,
+    im27,im28,im29,im30,im31,im32,im33,im34,im35,im36,im38,im39,im40,im41,im42,im43,im44,im45,im46
 };
