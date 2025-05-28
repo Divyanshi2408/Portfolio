@@ -45,8 +45,6 @@ import im44 from "./r1.png"
 import im45 from "./r2.png"
 import im46 from "./r3.png"
 
-
-
 export{
     im,im1,im2,im3,im4,im5,im6,im7,im8,im9,im10,im11,im12,im13,im14,
     im15,im16,im17,im18,im19,im20,im21,im22,im23,im24,im25,im26,
