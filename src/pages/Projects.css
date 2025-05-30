@@ -91,10 +91,33 @@
   text-align: center;
 }
 
-.project-details h4 {
+/* .project-details h4 {
   margin: 10px 0;
   color: #58a6ff;
+} */
+ .project-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
 }
+
+.project-header h4 {
+  margin: 10px 0;
+  color: #58a6ff;
+  font-size: 1.1rem;
+}
+
+.github-icon {
+  color: #ffffff;
+  font-size: 1.4rem;
+  transition: color 0.3s;
+}
+
+.github-icon:hover {
+  color: #58a6ff;
+}
+
 
 .project-details p {
   font-size: 0.9rem;

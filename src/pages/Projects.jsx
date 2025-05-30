@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { FaReact, FaHtml5, FaCss3, FaNodeJs } from "react-icons/fa";
+import { FaReact, FaHtml5, FaCss3, FaNodeJs, FaGithub } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io";
 import { MdOutlineWebhook } from "react-icons/md";
 import './Projects.css';
@@ -13,6 +13,7 @@ const projects = [
     title: "Learning Management System (LMS)",
     category: "Node.js",
     image: im40,
+    github: "https://github.com/yourusername/lms-project",
     description: "A MERN stack-based LMS platform where users can enroll in courses, track progress, and access learning materials.",
   },
   {
@@ -139,7 +140,21 @@ const Projects = () => {
             <div className="project-card" key={project.id}>
             <img src={project.image} alt={project.title} loading="lazy" />
               <div className="project-details">
-                <h4>{project.title}</h4>
+                <div className="project-header">
+  <h4>{project.title}</h4>
+  {project.github && (
+    <a
+      href={project.github}
+      className="github-icon"
+      target="_blank"
+      rel="noopener noreferrer"
+      title="View on GitHub"
+    >
+      <FaGithub />
+    </a>
+  )}
+</div>
+
                 <p>{project.description}</p>
                 
                 <button className='btn' onClick={() => navigate(`/project/${project.id}`)}>View Project</button>
