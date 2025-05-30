@@ -13,7 +13,7 @@ const projects = [
     title: "Learning Management System (LMS)",
     category: "Node.js",
     image: im40,
-    github: "https://github.com/yourusername/lms-project",
+    github: "https://github.com/Divyanshi2408/Learning-Management-System",
     description: "A MERN stack-based LMS platform where users can enroll in courses, track progress, and access learning materials.",
   },
   {
@@ -21,6 +21,7 @@ const projects = [
     title: "ThreadSpire – Community Wisdom Threads",
     category: "Node.js",
     image: im36,
+    github: "https://github.com/Divyanshi2408/ThreadSpire-Community-Wisdom-Threads",
     description: "A MERN-based community platform where users create, remix, and organize long-form wisdom threads.",
   },
   {
@@ -28,6 +29,7 @@ const projects = [
     title: "Real Estate Web App",
     category: "Node.js",
     image: im44,
+    github: "https://github.com/Divyanshi2408/Real-Estate-webApp",
     description: "A full-stack MERN Real Estate application for property listings, user authentication, and real-time search.",
   },
   {
@@ -35,6 +37,7 @@ const projects = [
     title: "Music Player Web App",
     category: "React",
     image: im12,
+    github: "https://github.com/Divyanshi2408/music-player",
     description: "I developed a dynamic and interactive music player web application.",
   },
   {
@@ -42,6 +45,7 @@ const projects = [
     title: "Recipe Finder Web App",
     category: "React",
     image: im16,
+    github: "https://github.com/Divyanshi2408/recipe-finder",
     description: "I created a Recipe Finder web application using React",
   },
   {
@@ -49,6 +53,7 @@ const projects = [
     title: "Airline Website",
     category: "HTML",
     image: im26,
+    github: "https://github.com/Divyanshi2408/ADR-Airline",
     description: "I created a dynamic and user-friendly Airline Website as a frontend-only project",
   },
   {
@@ -56,6 +61,7 @@ const projects = [
     title: "Travel Website",
     category: "HTML",
     image: im22,
+    github: "https://github.com/Divyanshi2408/Learning-Management-System",
     description: "I created a Travel Website using HTML, CSS, and JavaScript, aimed at showcasing travel destinations and services.",
   },
   {
@@ -63,6 +69,7 @@ const projects = [
     title: "Flower Website",
     category: "HTML",
     image: im31,
+    github: "https://github.com/Divyanshi2408/Flower-Web",
     description: "This Flower Website was developed using HTML, CSS, and JavaScript",
   },
   {
@@ -70,6 +77,7 @@ const projects = [
     title: "Sorting Algorithm Visualizer",
     category: "React",
     image: im20,
+    github: "https://github.com/Divyanshi2408/sorting-visualizer-main",
     description: "The Sorting Algorithm Visualizer is a React-based application that visually demonstrates various sorting algorithms in action.",
   },
   {
@@ -77,6 +85,7 @@ const projects = [
     title: "To-Do List App",
     category: "React",
     image: im11,
+    github: "https://github.com/Divyanshi2408/Todo-list",
     description: "I developed a To-Do List App using React, designed to help users efficiently manage their daily tasks.",
   },
 ];
